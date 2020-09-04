@@ -24,6 +24,6 @@ public class MainActivity extends Activity {
                 startActivity(intent);
                 MainActivity.this.finish();
             }
-        },3000);
+        },4000);
     }
 }
