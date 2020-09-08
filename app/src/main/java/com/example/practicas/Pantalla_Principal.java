@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class Pantalla_Principal extends AppCompatActivity {
     private EditText txt_Usuario, txt_Contrasena;
@@ -68,7 +69,23 @@ public class Pantalla_Principal extends AppCompatActivity {
                 buttonOk.setEnabled(txt_Contrasena.length() > 0);
             }
         });
+
+        buttonOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String V_User = txt_Usuario.getText().toString();
+                String V_Pass = txt_Contrasena.getText().toString();
+                if(V_User.equals("prac@gmail.com") && V_Pass.equals("123")){
+                    Intent intent = new Intent(getApplicationContext(),Inicio.class);
+                    startActivity(intent);
+                }else {
+                    Toast.makeText(getApplicationContext(), "Email o Password Erronea", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+        });
     }
+
 
     public void AbrirWhatsApp(String telefono) {
         Intent _intencion = new Intent("android.intent.action.MAIN");
