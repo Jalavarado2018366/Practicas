@@ -70,10 +70,6 @@ public class Pantalla_Principal extends AppCompatActivity {
         });
     }
 
-    private void Calcular(String view) {
-
-    }
-
     public void AbrirWhatsApp(String telefono) {
         Intent _intencion = new Intent("android.intent.action.MAIN");
         _intencion.setComponent(new ComponentName("com.whatsapp", "com.whatsapp.Conversation"));
