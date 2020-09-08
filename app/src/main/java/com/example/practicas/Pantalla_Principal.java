@@ -17,8 +17,8 @@ public class Pantalla_Principal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla__principal);
 
-        et1 = findViewById(R.id.editTextTextPersonName);
-        et2 = findViewById(R.id.editTextTextPassword);
+        et1 = findViewById(R.id.txt_user);
+        et2 = findViewById(R.id.txt_password);
 
         buttonOk= findViewById(R.id.button);
 
