@@ -10,7 +10,6 @@ import android.os.Handler;
 public class MainActivity extends Activity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,10 +19,10 @@ public class MainActivity extends Activity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(MainActivity.this,Pantalla_Principal.class);
+                Intent intent = new Intent(MainActivity.this, Pantalla_Principal.class);
                 startActivity(intent);
                 MainActivity.this.finish();
             }
-        },4000);
+        }, 4000);
     }
 }
