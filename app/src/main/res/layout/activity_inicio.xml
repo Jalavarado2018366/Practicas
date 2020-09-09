@@ -30,7 +30,7 @@
                     android:id="@+id/toolBar"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    android:background="@drawable/bar">
+                    android:background="@drawable/toolbar">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -45,14 +45,12 @@
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintRight_toRightOf="parent"/>
-
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
                 </androidx.appcompat.widget.Toolbar>
 
             </com.google.android.material.appbar.AppBarLayout>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.navigation.NavigationView
@@ -63,10 +61,10 @@
 
             <include
                 android:id="@+id/layoutDrawer"
-                layout="@layout/activity_drawer_layout" />
+                layout="@layout/activity_drawer_layout"></include>
 
         </com.google.android.material.navigation.NavigationView>
-
     </androidx.drawerlayout.widget.DrawerLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

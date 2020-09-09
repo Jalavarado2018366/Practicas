@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/header"
+    android:background="#ffffff"
     tools:context=".drawer_layout">
 
     <View
@@ -12,7 +12,7 @@
         android:layout_width="417dp"
         android:layout_height="210dp"
         android:background="@drawable/fondo_verde"
-        app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -72,4 +72,14 @@
             android:background="@drawable/edt_style"
             android:drawableLeft="@drawable/ic_baseline_people_alt_24" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="166dp"
+        android:layout_height="37dp"
+        android:text="Banco Promerica"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
