@@ -6,5 +6,9 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="barStyle" parent="Widget.AppCompat.ActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:background">@drawable/bar</item>
+    </style>
 
 </resources>
