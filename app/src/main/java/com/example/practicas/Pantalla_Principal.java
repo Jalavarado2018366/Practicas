@@ -72,14 +72,16 @@ public class Pantalla_Principal extends AppCompatActivity {
 
         buttonOk.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view ) {
                 String V_User = txt_Usuario.getText().toString();
+                txt_Usuario.setText("");
                 String V_Pass = txt_Contrasena.getText().toString();
-                if(V_User.equals("prac@gmail.com") && V_Pass.equals("123")){
+                txt_Contrasena.getText().clear();
+                if(V_User.equals("kinal@gmail.com") && V_Pass.equals("123")){
                     Intent intent = new Intent(getApplicationContext(),Inicio.class);
                     startActivity(intent);
                 }else {
-                    Toast.makeText(getApplicationContext(), "Email o Password Erronea", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "verify your email or password", Toast.LENGTH_SHORT).show();
                 }
             }
 
