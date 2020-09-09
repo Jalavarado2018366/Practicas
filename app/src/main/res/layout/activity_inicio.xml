@@ -9,8 +9,8 @@
     <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="80dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -23,8 +23,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="MissingClass">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolBar"
@@ -41,20 +40,18 @@
                             android:id="@+id/imageView2"
                             android:layout_width="55dp"
                             android:layout_height="45dp"
-
-                            android:layout_marginStart="352dp"
-                            android:layout_marginLeft="352dp"
-                            android:layout_marginTop="4dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@drawable/ic_baseline_more_vert_24"
-                            tools:ignore="MissingConstraints,VectorDrawableCompat" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"/>
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
                 </androidx.appcompat.widget.Toolbar>
 
             </com.google.android.material.appbar.AppBarLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.navigation.NavigationView
@@ -65,10 +62,10 @@
 
             <include
                 android:id="@+id/layoutDrawer"
-                layout="@layout/activity_drawer_layout"></include>
+                layout="@layout/activity_drawer_layout" />
 
         </com.google.android.material.navigation.NavigationView>
-    </androidx.drawerlayout.widget.DrawerLayout>
 
+    </androidx.drawerlayout.widget.DrawerLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
