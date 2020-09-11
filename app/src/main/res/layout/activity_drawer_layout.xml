@@ -12,75 +12,241 @@
         android:layout_width="417dp"
         android:layout_height="210dp"
         android:background="@drawable/fondo_verde"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="334dp"
-        android:layout_marginTop="1dp"
-        android:orientation="vertical"
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/button7"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edt_style"
-            android:drawableLeft="@drawable/ic_baseline_people_alt_24"
- />
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view">
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edt_style"
-            android:drawableLeft="@drawable/ic_baseline_people_alt_24"
- />
+            <Button
+                android:id="@+id/button_w"
+                android:layout_width="348dp"
+                android:layout_height="54dp"
+                android:layout_gravity="start"
+                android:background="@color/blanco"
+                android:drawableLeft="@drawable/whatsapp_icono"
+                android:drawablePadding="9dp"
+                android:text="Whatsapp Promerica"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark"
+                android:textCursorDrawable="@color/colorPrimary"
+                android:textSize="13sp"
+                android:typeface="serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edt_style"
-            android:drawableLeft="@drawable/ic_baseline_people_alt_24"
- />
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edt_style"
-            android:drawableLeft="@drawable/ic_baseline_people_alt_24" />
+            <View
+                android:id="@+id/divider"
+                android:layout_width="324dp"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:scrollbarThumbHorizontal="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_w" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edt_style"
-            android:drawableLeft="@drawable/ic_baseline_people_alt_24"
- />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="348dp"
+                android:layout_height="54dp"
+                android:layout_gravity="start"
+                android:background="@color/blanco"
+                android:drawableLeft="@drawable/sucursales_icono_promerica"
+                android:drawablePadding="9dp"
+                android:text="Sucursales"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark"
+                android:textCursorDrawable="@color/colorPrimary"
+                android:textIsSelectable="true"
+                android:textSize="13dp"
+                android:typeface="serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edt_style"
-            android:drawableLeft="@drawable/ic_baseline_people_alt_24" />
-    </LinearLayout>
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="324dp"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:scrollbarThumbHorizontal="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="348dp"
+                android:layout_height="54dp"
+                android:layout_gravity="start"
+                android:background="@color/blanco"
+                android:drawableLeft="@drawable/beneficiarios"
+                android:drawablePadding="9dp"
+                android:text="Beneficiarios"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark"
+                android:textCursorDrawable="@color/colorPrimary"
+                android:textIsSelectable="true"
+                android:textSize="13dp"
+                android:typeface="serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="324dp"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:scrollbarThumbHorizontal="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="348dp"
+                android:layout_height="54dp"
+                android:layout_gravity="start"
+                android:background="@color/blanco"
+                android:drawableLeft="@drawable/tarjeta"
+                android:drawablePadding="19dp"
+                android:text="Mis medios de pago"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark"
+                android:textCursorDrawable="@color/colorPrimary"
+                android:textIsSelectable="true"
+                android:textSize="13dp"
+                android:typeface="serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="324dp"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:scrollbarThumbHorizontal="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="58dp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="325dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="60dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Cerrar seción"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="166dp"
-        android:layout_height="37dp"
+        android:id="@+id/textView1"
+        android:layout_width="122dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
         android:text="Banco Promerica"
         android:textColor="#ffffff"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:textSize="13dp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="160dp"
+        android:text="ANDERS ALEJANDRO DIAZ GONZALES"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="59dp"
+        android:layout_height="36dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_notifications_none_24" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="38dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/estrella_blanca" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="141dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/perfil" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

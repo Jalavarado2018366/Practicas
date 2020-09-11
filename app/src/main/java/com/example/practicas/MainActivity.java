@@ -19,10 +19,10 @@ public class MainActivity extends Activity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(MainActivity.this, Inicio.class);
+                Intent intent = new Intent(MainActivity.this, Pantalla_Principal.class);
                 startActivity(intent);
                 MainActivity.this.finish();
             }
-        }, 4000);
+        }, 2000);
     }
 }
