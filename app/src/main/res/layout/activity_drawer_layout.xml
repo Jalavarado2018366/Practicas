@@ -14,17 +14,18 @@
         android:background="@drawable/fondo_verde"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="210dp"
+        android:fillViewport="true"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/view">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -43,7 +44,7 @@
                 android:layout_height="54dp"
                 android:layout_gravity="start"
                 android:background="@color/blanco"
-                android:drawableLeft="@drawable/whatsapp_icono"
+                android:drawableLeft="@drawable/whatsapp_logo"
                 android:drawablePadding="9dp"
                 android:text="Whatsapp Promerica"
                 android:textAlignment="textStart"
@@ -75,7 +76,7 @@
                 android:layout_height="54dp"
                 android:layout_gravity="start"
                 android:background="@color/blanco"
-                android:drawableLeft="@drawable/sucursales_icono_promerica"
+                android:drawableLeft="@drawable/sucursales_icono_promerica2"
                 android:drawablePadding="9dp"
                 android:text="Sucursales"
                 android:textAlignment="textStart"
@@ -107,7 +108,7 @@
                 android:layout_height="54dp"
                 android:layout_gravity="start"
                 android:background="@color/blanco"
-                android:drawableLeft="@drawable/beneficiarios"
+                android:drawableLeft="@drawable/beneficiarios1"
                 android:drawablePadding="9dp"
                 android:text="Beneficiarios"
                 android:textAlignment="textStart"
@@ -139,7 +140,7 @@
                 android:layout_height="54dp"
                 android:layout_gravity="start"
                 android:background="@color/blanco"
-                android:drawableLeft="@drawable/tarjeta"
+                android:drawableLeft="@drawable/tarjeta1"
                 android:drawablePadding="19dp"
                 android:text="Mis medios de pago"
                 android:textAlignment="textStart"
@@ -176,10 +177,11 @@
                 android:id="@+id/button5"
                 android:layout_width="325dp"
                 android:layout_height="55dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="200dp"
                 android:background="@color/colorPrimaryDark"
                 android:text="Cerrar seción"
                 android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button4" />
@@ -208,7 +210,7 @@
         android:layout_width="160dp"
         android:layout_height="43dp"
         android:layout_marginTop="160dp"
-        android:text="ANDERS ALEJANDRO DIAZ GONZALES"
+        android:text="ANDRES ALEJANDRO DIAZ GONZALES"
         android:textColor="#ffffff"
         android:textSize="16dp"
         android:typeface="monospace"

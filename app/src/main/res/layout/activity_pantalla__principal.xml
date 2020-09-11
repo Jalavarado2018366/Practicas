@@ -89,8 +89,6 @@
                 android:id="@+id/textView"
                 android:layout_width="111dp"
                 android:layout_height="37dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
                 android:layout_marginTop="252dp"
                 android:text="¡Buenos"
                 android:textColor="#005748"
@@ -121,6 +119,7 @@
                 android:textColor="#005748"
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.462"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2"
                 tools:ignore="MissingConstraints" />
@@ -141,9 +140,9 @@
 
             <ImageButton
                 android:id="@+id/imageButton"
-                android:layout_width="65dp"
-                android:layout_height="64dp"
-                android:layout_marginTop="50dp"
+                android:layout_width="51dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="88dp"
                 android:background="@color/blanco"
                 app:layout_constraintEnd_toStartOf="@id/imageButton2"
                 app:layout_constraintHorizontal_chainStyle="spread"
@@ -164,14 +163,14 @@
 
             <ImageButton
                 android:id="@+id/imageButton2"
-                android:layout_width="64dp"
-                android:layout_height="63dp"
-                android:layout_marginTop="50dp"
+                android:layout_width="51dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="88dp"
                 android:background="@color/blanco"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageButton"
                 app:layout_constraintTop_toBottomOf="@+id/button"
-                app:srcCompat="@drawable/whatsapp_inicio" />
+                app:srcCompat="@drawable/whatsapp_icono" />
 
             <TextView
                 android:id="@+id/textView5"
