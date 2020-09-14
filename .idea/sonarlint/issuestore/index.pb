@@ -17,3 +17,17 @@ R
 Papp/src/main/java/com/example/practicas/fragments/discretScrollViewFragment.java,6\a\6a00288c75d771eab2641bda0b1a4bdc40a93f03
 p
 @app/src/main/java/com/example/practicas/AgentServiceAdapter.java,b\a\bad0f3d7b214bb201bf11014dbd100c55811e9d0
+o
+?app/src/main/res/drawable/ic_baseline_notifications_none_24.xml,d\f\df331f444d89eb36a05f80b87e758a8a98ca4d41
+U
+%app/src/main/res/drawable/ic_lock.xml,b\8\b849c6caa7a9eb0144791a9d509b549370702e0f
+[
++app/src/main/res/drawable/ic_lock_focus.xml,a\c\ac37392f11a5bc2971d7b9c2ac80124554f57a30
+W
+'app/src/main/res/drawable/ic_person.xml,4\f\4f1c53a33c55375c8897e53f5d0c8aff54ffc865
+]
+-app/src/main/res/drawable/ic_person_focus.xml,5\c\5c18a7753064941e4ea101964362eb3ac03b067b
+h
+8app/src/main/res/layout/fragment_discret_scroll_view.xml,5\7\5776fe509b3a63db296d6b58f7d4da795d6ef5d0
+S
+#app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e

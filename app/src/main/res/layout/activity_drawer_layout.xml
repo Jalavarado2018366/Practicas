@@ -219,13 +219,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <ImageButton
+        android:id="@+id/btNotification"
         android:layout_width="59dp"
         android:layout_height="36dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_notifications_none_24" />
+        android:background="@drawable/notification_style"
+        app:layout_constraintCircleRadius="100dp"
+        app:srcCompat="@drawable/ic_baseline_notifications_none_24">
+
+    </ImageButton>
 
     <ImageView
         android:id="@+id/imageView4"
@@ -233,7 +237,7 @@
         android:layout_height="26dp"
         android:layout_marginStart="130dp"
         android:layout_marginLeft="130dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/btNotification"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/estrella_blanca" />

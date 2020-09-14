@@ -23,7 +23,6 @@ public class Pantalla_Principal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla__principal);
-
         txt_Usuario = findViewById(R.id.txt_user);
         txt_Contrasena = findViewById(R.id.txt_password);
 
