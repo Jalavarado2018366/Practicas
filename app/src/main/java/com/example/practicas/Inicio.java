@@ -1,5 +1,6 @@
 package com.example.practicas;
 
+
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -16,6 +17,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
@@ -31,13 +33,6 @@ public class Inicio extends AppCompatActivity {
     private final static String CHANNEL_ID = "NOTIFICACION";
     private final static int NOTIFICACION_ID = 0;
 
-    private int[] tarjetas = new int[] {
-            R.drawable.tarjeta_1, R.drawable.tarjeta_2, R.drawable.tarjeta_3, R.drawable.tarjeta_4
-    };
-
-    private String[] tarjetasTitle = new String[] {
-            "1", "2", "3", "4"
-    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,23 +43,7 @@ public class Inicio extends AppCompatActivity {
         Notification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                createNotification();
-                createNotificationChannel();
-            }
-        });
-        CarouselView carouselView = findViewById(R.id.carouselView);
-        carouselView.setPageCount(tarjetas.length);
-        carouselView.setIndicatorVisibility(View.GONE);
-        carouselView.setImageListener(new ImageListener() {
-            @Override
-            public void setImageForPosition(int position, ImageView imageView) {
-                imageView.setImageResource(tarjetas[position]);
-            }
-        });
-        carouselView.setImageClickListener(new ImageClickListener() {
-            @Override
-            public void onClick(int position) {
-                Toast.makeText(Inicio.this, tarjetas[position], Toast.LENGTH_SHORT).show();
+                new ShopActivity();
             }
         });
         Abrir_Whatsapp.setOnClickListener(new View.OnClickListener() {

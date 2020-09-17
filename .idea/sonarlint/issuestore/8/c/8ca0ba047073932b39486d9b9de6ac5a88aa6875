@@ -1,0 +1,15 @@
+
+W
+java:S1128"5Remove this unused import 'android.widget.ImageView'.(ú¯ëàüÿÿÿÿ8¤´ÂõÈ.
+p
+java:S1450"SRemove the "shop" field and declare it as a local variable in the relevant methods.(ÛË˜8öÏ¨½É.
+]	java:S110"<This class has 9 parents which is greater than 5 authorized.(¥²è“úÿÿÿÿ8¶¥óñÈ.
+£
+java:S1186J"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ğ¸™áúÿÿÿÿ8öÏ¨½É.
+b
+java:S1128
+"@Remove this unused import 'androidx.core.content.ContextCompat'.(üäÂùÿÿÿÿ8»”øñÈ.
+…
+java:S3252G"hUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_SHORT".(Ã£Ğä8Í»£ÁÉ.
+^
+java:S1144F"<Remove this unused private "showUnsupportedSnackBar" method.(œÉìĞúÿÿÿÿ8Í»£ÁÉ.
