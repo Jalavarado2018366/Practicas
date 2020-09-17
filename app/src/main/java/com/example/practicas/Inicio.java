@@ -15,23 +15,37 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import com.synnapps.carouselview.CarouselView;
-import com.synnapps.carouselview.ImageClickListener;
-import com.synnapps.carouselview.ImageListener;
+import com.google.android.material.snackbar.Snackbar;
+import com.yarolegovich.discretescrollview.DSVOrientation;
+import com.yarolegovich.discretescrollview.DiscreteScrollView;
+import com.yarolegovich.discretescrollview.InfiniteScrollAdapter;
+import com.yarolegovich.discretescrollview.transform.ScaleTransformer;
 
-public class Inicio extends AppCompatActivity {
+import java.util.List;
+
+public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnItemChangedListener<ShopAdapter.ViewHolder>,
+        View.OnClickListener {
     private Button Abrir_Whatsapp;
     private ImageButton Notification;
     private PendingIntent pendingIntent;
     private final static String CHANNEL_ID = "NOTIFICACION";
     private final static int NOTIFICACION_ID = 0;
+
+    private List<Item> data;
+    private Shop shop;
+    private TextView currentItemName;
+    private TextView currentItemPrice;
+    private DiscreteScrollView itemPicker;
+    private InfiniteScrollAdapter<?> infiniteAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,10 +54,28 @@ public class Inicio extends AppCompatActivity {
 
         Abrir_Whatsapp = findViewById(R.id.button_w);
         Notification = findViewById((R.id.btNotification));
+        currentItemName = findViewById(R.id.item_name);
+        currentItemPrice = findViewById(R.id.item_price);
+
+        shop = Shop.get();
+        data = shop.getData();
+        itemPicker = findViewById(R.id.item_picker);
+        itemPicker.setOrientation(DSVOrientation.HORIZONTAL);
+        itemPicker.addOnItemChangedListener(this);
+        infiniteAdapter = InfiniteScrollAdapter.wrap(new ShopAdapter(data));
+        itemPicker.setAdapter(infiniteAdapter);
+        itemPicker.setItemTransitionTimeMillis(DiscreteScrollViewOptions.getTransitionTime());
+        itemPicker.setItemTransformer(new ScaleTransformer.Builder()
+                .setMinScale(0.8f)
+                .build());
+
+        onItemChanged(data.get(0));
+
         Notification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new ShopActivity();
+                createNotification();
+                createNotificationChannel();
             }
         });
         Abrir_Whatsapp.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +85,19 @@ public class Inicio extends AppCompatActivity {
             }
         });
 
+    }
+    private void onItemChanged(Item item) {
+        currentItemName.setText(item.getName());
+        currentItemPrice.setText(item.getPrice());
+    }
+    @Override
+    public void onCurrentItemChanged(@Nullable ShopAdapter.ViewHolder viewHolder, int adapterPosition) {
+        int positionInDataSet = infiniteAdapter.getRealPosition(adapterPosition);
+        onItemChanged(data.get(positionInDataSet));
+    }
+
+    private void showUnsupportedSnackBar() {
+        Snackbar.make(itemPicker, R.string.msg_unsupported_op, Snackbar.LENGTH_SHORT).show();
     }
     private void createNotificationChannel(){
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
@@ -80,5 +125,10 @@ public class Inicio extends AppCompatActivity {
         _intencion.setComponent(new ComponentName("com.whatsapp", "com.whatsapp.Conversation"));
         _intencion.putExtra("jid", PhoneNumberUtils.stripSeparators("502" + telefono) + "@s.whatsapp.net");
         startActivity(_intencion);
+    }
+
+    @Override
+    public void onClick(View view) {
+
     }
 }

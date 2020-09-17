@@ -1,28 +1,28 @@
 
-S
-java:S1128"6Remove this unused import 'android.app.PendingIntent'.(šºŞ—8’ªîîÈ.
+O
+java:S1128"-Remove this unused import 'android.os.Build'.(ãÇ¤Úıÿÿÿÿ8‘†ğîÈ.
+Q
+java:S1128"5Remove this unused import 'android.app.Notification'.(¸Ó†98‰‰ïîÈ.
+o	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡û¬øÿÿÿÿ8§ĞãíÈ.
 ^
 java:S1128	"<Remove this unused import 'android.app.NotificationChannel'.(ÒÒ…·ıÿÿÿÿ8‘†ğîÈ.
-^
-java:S1128
-"<Remove this unused import 'android.app.NotificationManager'.(¸˜ùÑûÿÿÿÿ8‘†ğîÈ.
 q
 java:S1450"TRemove the "whats" field and declare it as a local variable in the relevant methods.(²¹ßç8õÂÎÜÇ.
+Q	java:S110"<This class has 9 parents which is greater than 5 authorized.(ş
+^
+java:S1128"ARemove this unused import 'androidx.core.app.NotificationCompat'.(œéÔã8‘†ğîÈ.
+S
+java:S1128"6Remove this unused import 'android.app.PendingIntent'.(šºŞ—8’ªîîÈ.
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ş
+Y
+java:S1128"7Remove this unused import 'android.widget.ImageButton'.(‚ÏÉõÿÿÿÿÿ8’ªîîÈ.
 ^
 java:S1128"<Remove this unused import 'android.annotation.SuppressLint'.(ÕƒóÏûÿÿÿÿ8ï¤²îÈ.
 j
 java:S1128"HRemove this unused import 'androidx.core.app.NotificationManagerCompat'.(¥¤”úÿÿÿÿ8‘†ğîÈ.
+^
+java:S1128
+"<Remove this unused import 'android.app.NotificationManager'.(¸˜ùÑûÿÿÿÿ8‘†ğîÈ.
+r	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éİ©¹úÿÿÿÿ8§ĞãíÈ.
 U
 java:S1128"3Remove this unused import 'android.graphics.Color'.(øãíòşÿÿÿÿ8‘†ğîÈ.
-r	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éİ©¹úÿÿÿÿ8§ĞãíÈ.
-Y
-java:S1128"7Remove this unused import 'android.widget.ImageButton'.(‚ÏÉõÿÿÿÿÿ8’ªîîÈ.
-Q	java:S110"<This class has 9 parents which is greater than 5 authorized.(ş
-O
-java:S1128"-Remove this unused import 'android.os.Build'.(ãÇ¤Úıÿÿÿÿ8‘†ğîÈ.
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ş
-o	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡û¬øÿÿÿÿ8§ĞãíÈ.
-^
-java:S1128"ARemove this unused import 'androidx.core.app.NotificationCompat'.(œéÔã8‘†ğîÈ.
-Q
-java:S1128"5Remove this unused import 'android.app.Notification'.(¸Ó†98‰‰ïîÈ.

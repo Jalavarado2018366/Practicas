@@ -36,10 +36,6 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="$24.00 USD" />
 
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="16dp"
-        tools:ignore="MissingConstraints" />
 
     <com.yarolegovich.discretescrollview.DiscreteScrollView
         android:id="@+id/item_picker"
