@@ -25,8 +25,6 @@ W
 -app/src/main/res/drawable/ic_person_focus.xml,5\c\5c18a7753064941e4ea101964362eb3ac03b067b
 `
 0app/src/main/res/drawable/notification_style.xml,7\4\74696334d22796d1c03476f97774cb0a7cd3b808
-b
-2app/src/main/res/layout/activity_drawer_layout.xml,9\8\989b669ee184789a339ce11984f90850403a80b9
 @
 local.properties,0\7\0712df971a99ac4d2fccb8e0fb19f377f3374cca
 a
@@ -47,8 +45,6 @@ Qlibrary/src/main/java/com/yarolegovich/discretescrollview/DiscreteScrollView.ja
 0app/src/main/java/com/example/practicas/App.java,0\a\0ae3196442efa5a7be29aa3dc2f0b20fe095af50
 X
 (app/src/main/res/layout/activity_app.xml,a\a\aa259b464dc9cdca5a4f7c22d2a99de8e93f2198
-\
-,app/src/main/res/layout/activity_gallery.xml,f\6\f6b4c8fc8ee8b0c7ad4b013997aa882a76f70ec0
 b
 2app/src/main/res/layout/dialog_transition_time.xml,e\e\ee273f7abc3bce10ca7feb5f2896da48193a6cce
 S
@@ -111,3 +107,5 @@ D
 library/build.gradle,b\c\bc1e6337a6cee4d549ebc79c089f4196728c3aeb
 J
 library/proguard-rules.pro,5\d\5d356e3135d602d8198bb4b043fdfb97df7563c9
+Y
+)app/src/main/res/layout/activity_shop.xml,a\0\a07e4b3d325ee8dfdb0b4bffe0c0520d68d761bd

@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(MainActivity.this, Pantalla_Principal.class);
+                Intent intent = new Intent(MainActivity.this, Inicio.class);
                 startActivity(intent);
                 MainActivity.this.finish();
             }

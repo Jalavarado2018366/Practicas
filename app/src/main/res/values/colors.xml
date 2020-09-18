@@ -5,4 +5,5 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="header">#FEFEFE</color>
     <color name="blanco">#FFFFFF</color>
+    <color name="verdeclaro">#61E343</color>
 </resources>

@@ -44,8 +44,17 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
     private Shop shop;
     private TextView currentItemName;
     private TextView currentItemPrice;
+    private TextView currentItemfechaCorte;
+    private TextView currentItemfechaPago;
+    private TextView currentItemPagoMinimo;
+    private TextView currentItemPagoContado;
+    private TextView currentItemSaldoCorte;
+    private TextView currentItemSaldoDia;
     private DiscreteScrollView itemPicker;
     private InfiniteScrollAdapter<?> infiniteAdapter;
+
+    TextView movimiento_1,movimiento_2;
+    ImageView visible,ocultar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +63,21 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
 
         Abrir_Whatsapp = findViewById(R.id.button_w);
         Notification = findViewById((R.id.btNotification));
-        currentItemName = findViewById(R.id.item_name);
         currentItemPrice = findViewById(R.id.item_price);
+        currentItemfechaCorte = findViewById(R.id.txt_fechaCorte);
+        currentItemfechaPago = findViewById(R.id.txt_fechaPago);
+        currentItemPagoMinimo = findViewById(R.id.txt_pagoMinimo);
+        currentItemPagoContado = findViewById(R.id.txt_pagoContado);
+        currentItemSaldoCorte = findViewById(R.id.txt_pagoCorte);
+        currentItemSaldoDia = findViewById(R.id.txt_pagoDia);
+
+        movimiento_1 = (TextView) findViewById(R.id.textView7);
+        movimiento_2 = (TextView) findViewById(R.id.textView8);
+        visible = (ImageView) findViewById(R.id.imageView6);
+        ocultar = (ImageView) findViewById(R.id.imageView3);
+
+        findViewById(R.id.imageView3).setOnClickListener(this);
+        findViewById(R.id.imageView6).setOnClickListener(this);
 
         shop = Shop.get();
         data = shop.getData();
@@ -87,8 +109,13 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
 
     }
     private void onItemChanged(Item item) {
-        currentItemName.setText(item.getName());
         currentItemPrice.setText(item.getPrice());
+        currentItemfechaCorte.setText(item.getFecha_corte());
+        currentItemfechaPago.setText(item.getFecha_pago());
+        currentItemPagoMinimo.setText(item.getPago_minimo());
+        currentItemPagoContado.setText(item.getPago_contado());
+        currentItemSaldoCorte.setText(item.getSaldo_al_corte());
+        currentItemSaldoDia.setText(item.getSaldo_al_dia());
     }
     @Override
     public void onCurrentItemChanged(@Nullable ShopAdapter.ViewHolder viewHolder, int adapterPosition) {
@@ -129,6 +156,23 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
 
     @Override
     public void onClick(View view) {
-
+        switch (view.getId()) {
+            case R.id.imageView3:
+                if(movimiento_1.getVisibility() == View.GONE){
+                    movimiento_1.setVisibility(View.VISIBLE);
+                    movimiento_2.setVisibility(View.VISIBLE);
+                    visible.setVisibility(View.VISIBLE);
+                    ocultar.setVisibility(View.GONE);
+                }
+                break;
+            case R.id.imageView6:
+                if(movimiento_1.getVisibility() == View.VISIBLE){
+                    movimiento_1.setVisibility(View.GONE);
+                    movimiento_2.setVisibility(View.GONE);
+                    visible.setVisibility(View.GONE);
+                    ocultar.setVisibility(View.VISIBLE);
+                }
+                break;
+        }
     }
 }

@@ -26,6 +26,7 @@ public class ShopActivity extends AppCompatActivity implements DiscreteScrollVie
     private TextView currentItemName;
     private TextView currentItemPrice;
 
+
     private DiscreteScrollView itemPicker;
     private InfiniteScrollAdapter<?> infiniteAdapter;
 
@@ -34,8 +35,8 @@ public class ShopActivity extends AppCompatActivity implements DiscreteScrollVie
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
 
-        currentItemName = findViewById(R.id.item_name);
         currentItemPrice = findViewById(R.id.item_price);
+
 
         shop = Shop.get();
         data = shop.getData();
@@ -56,8 +57,8 @@ public class ShopActivity extends AppCompatActivity implements DiscreteScrollVie
 
 
     private void onItemChanged(Item item) {
-        currentItemName.setText(item.getName());
         currentItemPrice.setText(item.getPrice());
+
     }
 
 

@@ -1,30 +1,35 @@
 
+p
+java:S1450,"SRemove the "shop" field and declare it as a local variable in the relevant methods.(ÛË˜8½êÀìÉ.
+p	java:S100Œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡û¬øÿÿÿÿ8Ø€õËÉ.
+B
+java:S16595"%Declare "ocultar" on a separate line.(Ğåû8£ëŠíÉ.
+G
+java:S16594"*Declare "movimiento_2" on a separate line.(ÿå£8–ÜªìÉ.
+s	java:S1164"WRename this field "movimiento_2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿå£8–ÜªìÉ.
+i
+java:S1301•"KReplace this "switch" statement by "if" statements to increase readability.(ºÖ8ÃÙĞìÉ.
+^
+java:S1144t"<Remove this unused private "showUnsupportedSnackBar" method.(œÉìĞúÿÿÿÿ8ÃÙĞìÉ.
 S
 java:S1128"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ä¹éÀÉ.
-^
-java:S1144c"<Remove this unused private "showUnsupportedSnackBar" method.(œÉìĞúÿÿÿÿ8¼ÖûËÉ.
-X	java:S110#"<This class has 9 parents which is greater than 5 authorized.(ı»Ù£8½ùæÀÉ.
-r	java:S117|"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éİ©¹úÿÿÿÿ8Ø€õËÉ.
-p
-java:S1450,"SRemove the "shop" field and declare it as a local variable in the relevant methods.(ÛË˜8ášùËÉ.
-g
-java:S1124)"EReorder the modifiers to comply with the Java Language Specification.(Ğß¯şÿÿÿÿ8½ùæÀÉ.
-}
-java:S1450&"[Remove the "Notification" field and declare it as a local variable in the relevant methods.(õ®ÿ­øÿÿÿÿ8½ùæÀÉ.
-u	java:S116%"YRename this field "Abrir_Whatsapp" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞßÙö8½ùæÀÉ.
-o	java:S100{"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡û¬øÿÿÿÿ8Ø€õËÉ.
-¤
-java:S1186ƒ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ğ¸™áúÿÿÿÿ8¯ÈüËÉ.
-…
-java:S3252d"hUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_SHORT".(Ã£Ğä8¼ÖûËÉ.
-W
-java:S1128"5Remove this unused import 'android.widget.ImageView'.(ú¯ëàüÿÿÿÿ8ä¹éÀÉ.
-N
-java:S1068'"1Remove this unused "pendingIntent" private field.(Œ¬¨Â8½ùæÀÉ.
-x	java:S116&"WRename this field "Notification" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ®ÿ­øÿÿÿÿ8½ùæÀÉ.
 U
 java:S1128"8Remove this unused import 'androidx.annotation.NonNull'.(ˆÛúÜ8½ùæÀÉ.
+u	java:S116%"YRename this field "Abrir_Whatsapp" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞßÙö8½ùæÀÉ.
+}
+java:S1450&"[Remove the "Notification" field and declare it as a local variable in the relevant methods.(õ®ÿ­øÿÿÿÿ8½ùæÀÉ.
 g
 java:S1124("EReorder the modifiers to comply with the Java Language Specification.(ÊäŠ®ÿÿÿÿÿ8½ùæÀÉ.
+…
+java:S3252u"hUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_SHORT".(Ã£Ğä8¼ÖûËÉ.
+X	java:S110#"<This class has 9 parents which is greater than 5 authorized.(ı»Ù£8½ùæÀÉ.
+x	java:S116&"WRename this field "Notification" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ®ÿ­øÿÿÿÿ8½ùæÀÉ.
 z
 java:S1450%"]Remove the "Abrir_Whatsapp" field and declare it as a local variable in the relevant methods.(ŞßÙö8½ùæÀÉ.
+?	java:S131•""Add a default case to this switch.(ºÖ8ÃÙĞìÉ.
+N
+java:S1068'"1Remove this unused "pendingIntent" private field.(Œ¬¨Â8½ùæÀÉ.
+s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éİ©¹úÿÿÿÿ8Ø€õËÉ.
+s	java:S1164"WRename this field "movimiento_1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿå£8ÌÍ£ìÉ.
+g
+java:S1124)"EReorder the modifiers to comply with the Java Language Specification.(Ğß¯şÿÿÿÿ8½ùæÀÉ.
