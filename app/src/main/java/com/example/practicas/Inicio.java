@@ -47,10 +47,12 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
     private TextView currentItemPrice;
     private TextView currentItemfechaCorte;
     private TextView currentItemfechaPago;
+
     private TextView currentItemPagoMinimo;
     private TextView currentItemPagoContado;
     private TextView currentItemSaldoCorte;
     private TextView currentItemSaldoDia;
+
     private TextView currentItemSaldoPuntos;
     private TextView currentItemLimiteCredito;
     private TextView currentItemCreditoUtilizado;
@@ -58,6 +60,16 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
     private TextView currentItemDisponibleRetiros;
     private TextView currentItemAutorizaciones;
     private TextView currentItemExtrafinanciamiento;
+
+    private TextView saldo_en_puntos;
+    private TextView limite_credito;
+    private TextView credito_utilizado;
+    private TextView disponible_Visa;
+    private TextView disponible_retiros;
+    private TextView autorizacion;
+    private TextView disponible;
+    private TextView extrafinanciamiento;
+
     private DiscreteScrollView itemPicker;
     private InfiniteScrollAdapter<?> infiniteAdapter;
 
@@ -85,6 +97,15 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
         currentItemDisponibleRetiros = findViewById(R.id.txt_disponibleRetiros);
         currentItemAutorizaciones = findViewById(R.id.txt_Autorizacion);
         currentItemExtrafinanciamiento = findViewById(R.id.txt_Extrafinanciamiento);
+
+        saldo_en_puntos = findViewById(R.id.textView_SaldoPuntos);
+        limite_credito = findViewById(R.id.textView_limite_credito);
+        credito_utilizado = findViewById(R.id.textView_credito_utilizado);
+        disponible_Visa = findViewById(R.id.textView_disponible_visa);
+        disponible_retiros = findViewById(R.id.textView_disponible_retiros);
+        autorizacion = findViewById(R.id.textView_autorizacion);
+        disponible = findViewById(R.id.textView_disponible);
+        extrafinanciamiento = findViewById(R.id.textView_extrafinanciamiento);
 
 
         movimiento_1 = (TextView) findViewById(R.id.textView7);
@@ -203,11 +224,49 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
                 }
                 break;
             case R.id.imageVie:
-                if(movimiento_1.getVisibility() == View.VISIBLE){
-                    movimiento_1.setVisibility(View.GONE);
-                    movimiento_2.setVisibility(View.GONE);
-                    visible.setVisibility(View.GONE);
-                    ocultar.setVisibility(View.VISIBLE);
+                if(movimiento_3.getVisibility() == View.VISIBLE){
+                    currentItemSaldoPuntos.setVisibility(View.VISIBLE);
+                    currentItemLimiteCredito.setVisibility(View.VISIBLE);
+                    currentItemCreditoUtilizado.setVisibility(View.VISIBLE);
+                    currentItemDisponibleVisa.setVisibility(View.VISIBLE);
+                    currentItemDisponibleRetiros.setVisibility(View.VISIBLE);
+                    currentItemAutorizaciones.setVisibility(view.VISIBLE);
+                    currentItemExtrafinanciamiento.setVisibility(View.VISIBLE);
+                    saldo_en_puntos.setVisibility(View.VISIBLE);
+                    limite_credito.setVisibility(View.VISIBLE);
+                    credito_utilizado.setVisibility(View.VISIBLE);
+                    disponible_Visa.setVisibility(View.VISIBLE);
+                    disponible_retiros.setVisibility(View.VISIBLE);
+                    autorizacion.setVisibility(View.VISIBLE);
+                    disponible.setVisibility(View.VISIBLE);
+                    extrafinanciamiento.setVisibility(View.VISIBLE);
+                    visible1.setVisibility(View.GONE);
+                    ocultar1.setVisibility(View.VISIBLE);
+                    movimiento_3.setVisibility(View.GONE);
+                    movimiento_4.setVisibility(View.VISIBLE);
+                }
+                break;
+            case R.id.imageVie12:
+                if(movimiento_4.getVisibility() == View.VISIBLE){
+                    currentItemSaldoPuntos.setVisibility(View.GONE);
+                    currentItemLimiteCredito.setVisibility(View.GONE);
+                    currentItemCreditoUtilizado.setVisibility(View.GONE);
+                    currentItemDisponibleVisa.setVisibility(View.GONE);
+                    currentItemDisponibleRetiros.setVisibility(View.GONE);
+                    currentItemAutorizaciones.setVisibility(view.GONE);
+                    currentItemExtrafinanciamiento.setVisibility(View.GONE);
+                    saldo_en_puntos.setVisibility(View.GONE);
+                    limite_credito.setVisibility(View.GONE);
+                    credito_utilizado.setVisibility(View.GONE);
+                    disponible_Visa.setVisibility(View.GONE);
+                    disponible_retiros.setVisibility(View.GONE);
+                    autorizacion.setVisibility(View.GONE);
+                    disponible.setVisibility(View.GONE);
+                    extrafinanciamiento.setVisibility(View.GONE);
+                    visible1.setVisibility(View.VISIBLE);
+                    ocultar1.setVisibility(View.GONE);
+                    movimiento_3.setVisibility(View.VISIBLE);
+                    movimiento_4.setVisibility(View.GONE);
                 }
                 break;
         }

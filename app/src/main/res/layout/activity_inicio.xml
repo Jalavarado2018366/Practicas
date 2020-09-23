@@ -135,14 +135,14 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="600dp"
+                        android:layout_height="match_parent"
                         android:background="@color/blanco"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/imageView6"
-                        app:layout_constraintVertical_bias="0.0">
+                        app:layout_constraintVertical_bias="0.083">
 
 
                         <TextView
@@ -296,15 +296,15 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
                                     android:gravity="left"
-                                    android:visibility="gone"
                                     android:text="Saldo en Puntos"
+                                    android:visibility="gone"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toBottomOf="@+id/textView_SaldoDía" />
 
                                 <TextView
-                                    android:id="@+id/textView23"
+                                    android:id="@+id/textView_limite_credito"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -317,7 +317,7 @@
                                     app:layout_constraintTop_toBottomOf="@+id/textView_SaldoPuntos" />
 
                                 <TextView
-                                    android:id="@+id/textView25"
+                                    android:id="@+id/textView_credito_utilizado"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -327,10 +327,10 @@
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/textView23" />
+                                    app:layout_constraintTop_toBottomOf="@+id/textView_limite_credito" />
 
                                 <TextView
-                                    android:id="@+id/textView26"
+                                    android:id="@+id/textView_disponible_visa"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -340,10 +340,10 @@
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+                                    app:layout_constraintTop_toBottomOf="@+id/textView_credito_utilizado" />
 
                                 <TextView
-                                    android:id="@+id/textView27"
+                                    android:id="@+id/textView_disponible_retiros"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -353,10 +353,10 @@
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/textView26" />
+                                    app:layout_constraintTop_toBottomOf="@+id/textView_disponible_visa" />
 
                                 <TextView
-                                    android:id="@+id/textView28"
+                                    android:id="@+id/textView_autorizacion"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -366,10 +366,10 @@
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/textView27" />
+                                    app:layout_constraintTop_toBottomOf="@+id/textView_disponible_retiros" />
 
                                 <TextView
-                                    android:id="@+id/textView29"
+                                    android:id="@+id/textView_disponible"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -379,10 +379,10 @@
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+                                    app:layout_constraintTop_toBottomOf="@+id/textView_autorizacion" />
 
                                 <TextView
-                                    android:id="@+id/textView30"
+                                    android:id="@+id/textView_extrafinanciamiento"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -392,7 +392,7 @@
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/textView29" />
+                                    app:layout_constraintTop_toBottomOf="@+id/textView_disponible" />
 
                                 <TextView
                                     android:id="@+id/textView14"
@@ -457,7 +457,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
-                                    android:textColor="@color/verdeclaro"
+                                    android:textColor="@color/rojo"
                                     android:visibility="gone"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="1.0"
@@ -470,8 +470,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
-                                    android:visibility="gone"
                                     android:textColor="@color/verdeclaro"
+                                    android:visibility="gone"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="1.0"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -496,8 +496,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
-                                    android:visibility="gone"
                                     android:textColor="@color/verdeclaro"
+                                    android:visibility="gone"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="1.0"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -645,25 +645,38 @@
                                     app:srcCompat="@drawable/ver_mas" />
 
                                 <TextView
+                                    android:id="@+id/vermas"
+                                    android:layout_width="50dp"
+                                    android:layout_height="14dp"
+                                    android:layout_marginTop="240dp"
+                                    android:text="Ver más"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="11dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.468"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
                                     android:id="@+id/vermas12"
                                     android:layout_width="50dp"
                                     android:layout_height="14dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:layout_marginTop="285dp"
+                                    android:layout_marginTop="400dp"
+                                    android:text="Ocultar"
                                     android:textColor="@color/colorPrimaryDark"
                                     android:textSize="11dp"
                                     android:visibility="gone"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.479"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    tools:text="Ocultar" />
+                                    app:layout_constraintTop_toTopOf="parent" />
 
                                 <ImageView
                                     android:id="@+id/imageVie12"
                                     android:layout_width="55dp"
                                     android:layout_height="36dp"
-                                    android:layout_marginTop="300dp"
+                                    android:layout_marginTop="420dp"
                                     android:visibility="gone"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.479"
@@ -720,17 +733,6 @@
                             app:layout_constraintHorizontal_bias="0.873"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/imageView7" />
-
-                        <TextView
-                            android:id="@+id/vermas"
-                            android:layout_width="50dp"
-                            android:layout_height="14dp"
-                            android:layout_gravity="center_horizontal"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="11dp"
-                            tools:layout_editor_absoluteX="174dp"
-                            tools:layout_editor_absoluteY="389dp"
-                            tools:text="Ver más" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
