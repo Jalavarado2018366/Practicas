@@ -109,3 +109,5 @@ J
 library/proguard-rules.pro,5\d\5d356e3135d602d8198bb4b043fdfb97df7563c9
 Y
 )app/src/main/res/layout/activity_shop.xml,a\0\a07e4b3d325ee8dfdb0b4bffe0c0520d68d761bd
+\
+,app/src/main/res/drawable/tarjetas_style.xml,5\b\5be36464235434663eabe3eedeae56604814ddf6

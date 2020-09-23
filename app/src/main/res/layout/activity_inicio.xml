@@ -85,7 +85,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView6"
-                        app:srcCompat="@drawable/visible" />
+                        app:srcCompat="@drawable/ver_mas2" />
 
                     <ImageView
                         android:id="@+id/imageView6"
@@ -96,7 +96,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView8"
-                        app:srcCompat="@drawable/ocultar" />
+                        app:srcCompat="@drawable/ocultar1" />
 
                     <TextView
                         android:id="@+id/textView7"
@@ -145,27 +145,27 @@
                         app:layout_constraintVertical_bias="0.0">
 
 
-
                         <TextView
                             android:id="@+id/textView10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="44dp"
+                            android:layout_marginTop="48dp"
                             android:text="Detalle de la Cuenta"
                             android:textColor="@color/colorPrimaryDark"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.139"
+                            app:layout_constraintHorizontal_bias="0.104"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
 
                         <TextView
                             android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="48dp"
+                            android:layout_marginTop="44dp"
                             android:text="*******"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.831"
+                            app:layout_constraintHorizontal_bias="0.839"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -173,10 +173,10 @@
                             android:id="@+id/view3"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:layout_marginTop="35dp"
+                            android:layout_marginTop="36dp"
                             android:background="@drawable/ojo"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.955"
+                            app:layout_constraintHorizontal_bias="0.923"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -184,15 +184,14 @@
                             android:id="@+id/textView11"
                             android:layout_width="37dp"
                             android:layout_height="23dp"
-                            android:layout_marginTop="44dp"
+                            android:layout_marginTop="40dp"
                             android:text="PIN"
                             android:textColor="@color/verdeclaro"
                             android:textSize="18sp"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.719"
+                            app:layout_constraintHorizontal_bias="0.727"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
-
 
                         <TextView
                             android:id="@+id/textView9"
@@ -202,70 +201,198 @@
                             android:text="Tarjeta de Crédito"
                             android:textColor="#FA5858"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.11"
+                            app:layout_constraintHorizontal_bias="0.056"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ScrollView
                             android:id="@+id/scrollView2"
                             android:layout_width="match_parent"
-                            android:layout_height="372dp"
-                            android:layout_marginTop="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="80dp"
                             android:fillViewport="true"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintHorizontal_bias="1.0"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginRight="30dp"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent">
 
-                                <TextView
-                                    android:id="@+id/textView16"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="144dp"
-                                    android:text="PagoMinimo"
+                                <View
+                                    android:id="@+id/divider"
+                                    android:layout_width="360dp"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginEnd="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="?android:attr/listDivider"
+                                    android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                                    android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                                    android:scrollbarThumbHorizontal="@android:color/darker_gray"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.036"
+                                    app:layout_constraintHorizontal_bias="0.49"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
 
                                 <TextView
-                                    android:id="@+id/textView17"
+                                    android:id="@+id/textView_PagoMinimo"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="176dp"
-                                    android:text="Pago Contado"
+                                    android:layout_marginTop="140dp"
+                                    android:gravity="left"
+                                    android:text="Pago Minimo"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.033"
+                                    app:layout_constraintHorizontal_bias="0.0"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textViewPagoContado"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
+                                    android:text="Pago Contado"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.00"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView_PagoMinimo" />
 
                                 <TextView
                                     android:id="@+id/textView18"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="208dp"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
                                     android:text="Saldo al Corte"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.034"
+                                    app:layout_constraintHorizontal_bias="0.00"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent" />
+                                    app:layout_constraintTop_toBottomOf="@+id/textViewPagoContado" />
 
                                 <TextView
-                                    android:id="@+id/textView19"
+                                    android:id="@+id/textView_SaldoDía"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="236dp"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
                                     android:text="Saldo al Día"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.034"
+                                    app:layout_constraintHorizontal_bias="0.00"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent" />
+                                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                                <TextView
+                                    android:id="@+id/textView_SaldoPuntos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
+                                    android:visibility="gone"
+                                    android:text="Saldo en Puntos"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.00"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView_SaldoDía" />
+
+                                <TextView
+                                    android:id="@+id/textView23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
+                                    android:text="Límite Crédito"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.00"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView_SaldoPuntos" />
+
+                                <TextView
+                                    android:id="@+id/textView25"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
+                                    android:text="Crédito Utilizado"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.00"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                                <TextView
+                                    android:id="@+id/textView26"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
+                                    android:text="Disponible VisaCuotas"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.00"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                                <TextView
+                                    android:id="@+id/textView27"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
+                                    android:text="Disponible Retiros"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.00"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+                                <TextView
+                                    android:id="@+id/textView28"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
+                                    android:text="Autorizaciones Pendientes"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.00"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                                <TextView
+                                    android:id="@+id/textView29"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
+                                    android:text="Disponible"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.00"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+                                <TextView
+                                    android:id="@+id/textView30"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="left"
+                                    android:text="Extrafinanciamiento"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.00"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
                                 <TextView
                                     android:id="@+id/textView14"
@@ -274,7 +401,7 @@
                                     android:layout_marginTop="72dp"
                                     android:text="Fecha de Corte"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.036"
+                                    app:layout_constraintHorizontal_bias="0.0"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -283,9 +410,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="72dp"
+                                    android:gravity="end"
                                     android:text="Fecha de Pago"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.886"
+                                    app:layout_constraintHorizontal_bias="1.0"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -296,7 +424,7 @@
                                     android:layout_marginTop="4dp"
                                     android:text="Crédito Disponible"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.045"
+                                    app:layout_constraintHorizontal_bias="0.0"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -304,10 +432,10 @@
                                     android:id="@+id/txt_fechaCorte"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="13dp"
+                                    android:layout_marginTop="4dp"
                                     android:textColor="@color/colorPrimaryDark"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.081"
+                                    app:layout_constraintHorizontal_bias="0.0"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toBottomOf="@+id/textView14"
                                     tools:text="10/12/2020" />
@@ -316,89 +444,233 @@
                                     android:id="@+id/txt_pagoCorte"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="116dp"
-                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/verdeclaro"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.889"
+                                    app:layout_constraintHorizontal_bias="1.0"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/textView15"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_pagoContado"
+                                    tools:text="Q 0.00" />
+
+                                <TextView
+                                    android:id="@+id/txt_saldoPuntos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/verdeclaro"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="1.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_pagoDia"
+                                    tools:text="Q 0.00" />
+
+                                <TextView
+                                    android:id="@+id/txt_limiteCredito"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:visibility="gone"
+                                    android:textColor="@color/verdeclaro"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="1.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_saldoPuntos"
+                                    tools:text="Q 0.00" />
+
+                                <TextView
+                                    android:id="@+id/txt_creditoUtilizado"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/verdeclaro"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="1.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_limiteCredito"
+                                    tools:text="Q 0.00" />
+
+                                <TextView
+                                    android:id="@+id/txt_disponibleVisa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:visibility="gone"
+                                    android:textColor="@color/verdeclaro"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="1.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_creditoUtilizado"
+                                    tools:text="Q 0.00" />
+
+                                <TextView
+                                    android:id="@+id/txt_disponibleRetiros"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/verdeclaro"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="1.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_disponibleVisa"
+                                    tools:text="Q 0.00" />
+
+                                <TextView
+                                    android:id="@+id/txt_Autorizacion"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/verdeclaro"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="1.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_disponibleRetiros"
+                                    tools:text="Q 0.00" />
+
+                                <TextView
+                                    android:id="@+id/txt_pagoDia8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:visibility="invisible"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.997"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_Autorizacion"
+                                    tools:text="Q 0.00" />
+
+                                <TextView
+                                    android:id="@+id/txt_Extrafinanciamiento"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/verdeclaro"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.997"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_pagoDia8"
                                     tools:text="Q 0.00" />
 
                                 <TextView
                                     android:id="@+id/txt_pagoDia"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="144dp"
-                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/verdeclaro"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.889"
+                                    app:layout_constraintHorizontal_bias="1.0"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/textView15"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_pagoCorte"
                                     tools:text="Q 0.00" />
 
                                 <TextView
                                     android:id="@+id/txt_pagoContado"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="84dp"
-                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/verdeclaro"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.889"
+                                    app:layout_constraintHorizontal_bias="1.0"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/textView15"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_pagoMinimo"
                                     tools:text="Q 0.00" />
 
                                 <TextView
                                     android:id="@+id/txt_pagoMinimo"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="52dp"
-                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_marginTop="140dp"
+                                    android:textColor="@color/verdeclaro"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.892"
+                                    app:layout_constraintHorizontal_bias="1.0"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/textView15"
+                                    app:layout_constraintTop_toTopOf="parent"
                                     tools:text="Q 0.00" />
 
                                 <TextView
                                     android:id="@+id/txt_fechaPago"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
+                                    android:layout_marginTop="4dp"
                                     android:textColor="@color/colorPrimaryDark"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.895"
+                                    app:layout_constraintHorizontal_bias="1.0"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toBottomOf="@+id/textView15"
                                     tools:text="10/12/2020" />
 
                                 <Button
                                     android:id="@+id/button6"
-                                    android:layout_width="77dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="53dp"
+                                    android:layout_height="32dp"
                                     android:layout_marginTop="20dp"
-                                    android:background="@color/colorPrimaryDark"
+                                    android:background="@drawable/buttom1_style"
                                     android:text="Pagar"
                                     android:textColor="@color/blanco"
+                                    android:textSize="10dp"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.952"
+                                    app:layout_constraintHorizontal_bias="1.0"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
 
                                 <TextView
                                     android:id="@+id/item_price"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="129dp"
+                                    android:layout_height="25dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:layout_marginTop="28dp"
+                                    android:layout_marginTop="20dp"
                                     android:textColor="@color/verdeclaro"
-                                    android:textSize="24sp"
+                                    android:textSize="22dp"
                                     android:textStyle="bold"
                                     app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.045"
+                                    app:layout_constraintHorizontal_bias="0.0"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
                                     tools:text="$24.00 USD" />
+
+                                <ImageView
+                                    android:id="@+id/imageVie"
+                                    android:layout_width="55dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginTop="256dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.469"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/ver_mas" />
+
+                                <TextView
+                                    android:id="@+id/vermas12"
+                                    android:layout_width="50dp"
+                                    android:layout_height="14dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="285dp"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="11dp"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.479"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:text="Ocultar" />
+
+                                <ImageView
+                                    android:id="@+id/imageVie12"
+                                    android:layout_width="55dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginTop="300dp"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.479"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/ver_mas3" />
+
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
                         </ScrollView>
@@ -448,6 +720,19 @@
                             app:layout_constraintHorizontal_bias="0.873"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+                        <TextView
+                            android:id="@+id/vermas"
+                            android:layout_width="50dp"
+                            android:layout_height="14dp"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="11dp"
+                            tools:layout_editor_absoluteX="174dp"
+                            tools:layout_editor_absoluteY="389dp"
+                            tools:text="Ver más" />
+
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </ScrollView>

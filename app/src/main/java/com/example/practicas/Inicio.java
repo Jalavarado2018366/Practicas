@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.telephony.PhoneNumberUtils;
 import android.view.View;
 import android.widget.Button;
@@ -50,11 +51,18 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
     private TextView currentItemPagoContado;
     private TextView currentItemSaldoCorte;
     private TextView currentItemSaldoDia;
+    private TextView currentItemSaldoPuntos;
+    private TextView currentItemLimiteCredito;
+    private TextView currentItemCreditoUtilizado;
+    private TextView currentItemDisponibleVisa;
+    private TextView currentItemDisponibleRetiros;
+    private TextView currentItemAutorizaciones;
+    private TextView currentItemExtrafinanciamiento;
     private DiscreteScrollView itemPicker;
     private InfiniteScrollAdapter<?> infiniteAdapter;
 
-    TextView movimiento_1,movimiento_2;
-    ImageView visible,ocultar;
+    TextView movimiento_1,movimiento_2,movimiento_3,movimiento_4;
+    ImageView visible,ocultar,visible1,ocultar1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,14 +78,28 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
         currentItemPagoContado = findViewById(R.id.txt_pagoContado);
         currentItemSaldoCorte = findViewById(R.id.txt_pagoCorte);
         currentItemSaldoDia = findViewById(R.id.txt_pagoDia);
+        currentItemSaldoPuntos = findViewById(R.id.txt_saldoPuntos);
+        currentItemLimiteCredito = findViewById(R.id.txt_limiteCredito);
+        currentItemCreditoUtilizado = findViewById(R.id.txt_creditoUtilizado);
+        currentItemDisponibleVisa = findViewById(R.id.txt_disponibleVisa);
+        currentItemDisponibleRetiros = findViewById(R.id.txt_disponibleRetiros);
+        currentItemAutorizaciones = findViewById(R.id.txt_Autorizacion);
+        currentItemExtrafinanciamiento = findViewById(R.id.txt_Extrafinanciamiento);
+
 
         movimiento_1 = (TextView) findViewById(R.id.textView7);
         movimiento_2 = (TextView) findViewById(R.id.textView8);
+        movimiento_3 = (TextView) findViewById(R.id.vermas);
+        movimiento_4 = (TextView) findViewById(R.id.vermas12);
         visible = (ImageView) findViewById(R.id.imageView6);
         ocultar = (ImageView) findViewById(R.id.imageView3);
+        visible1 = (ImageView) findViewById(R.id.imageVie);
+        ocultar1 = (ImageView) findViewById(R.id.imageVie12);
 
         findViewById(R.id.imageView3).setOnClickListener(this);
         findViewById(R.id.imageView6).setOnClickListener(this);
+        findViewById(R.id.imageVie).setOnClickListener(this);
+        findViewById(R.id.imageVie12).setOnClickListener(this);
 
         shop = Shop.get();
         data = shop.getData();
@@ -116,6 +138,13 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
         currentItemPagoContado.setText(item.getPago_contado());
         currentItemSaldoCorte.setText(item.getSaldo_al_corte());
         currentItemSaldoDia.setText(item.getSaldo_al_dia());
+        currentItemSaldoPuntos.setText(item.getSaldo_en_puntos());
+        currentItemLimiteCredito.setText(item.getLimite_credito());
+        currentItemCreditoUtilizado.setText(item.getCredito_utilizados());
+        currentItemDisponibleRetiros.setText(item.getDisponible_retiros());
+        currentItemDisponibleVisa.setText(item.getDisponible_visaCuotas());
+        currentItemAutorizaciones.setText(item.getAutorizacion());
+        currentItemExtrafinanciamiento.setText(item.getExtrafinaciamiento());
     }
     @Override
     public void onCurrentItemChanged(@Nullable ShopAdapter.ViewHolder viewHolder, int adapterPosition) {
@@ -166,6 +195,14 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
                 }
                 break;
             case R.id.imageView6:
+                if(movimiento_1.getVisibility() == View.VISIBLE){
+                    movimiento_1.setVisibility(View.GONE);
+                    movimiento_2.setVisibility(View.GONE);
+                    visible.setVisibility(View.GONE);
+                    ocultar.setVisibility(View.VISIBLE);
+                }
+                break;
+            case R.id.imageVie:
                 if(movimiento_1.getVisibility() == View.VISIBLE){
                     movimiento_1.setVisibility(View.GONE);
                     movimiento_2.setVisibility(View.GONE);

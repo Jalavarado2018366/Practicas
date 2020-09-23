@@ -16,16 +16,16 @@
     </item>
     <item android:state_enabled="true">
         <shape android:shape="rectangle">
-            <solid android:color="@color/blanco"></solid>
-            <padding
-                android:bottom="5dp"
-                android:left="2dp"
-                android:right="2dp"
-                android:top="5dp"></padding>
-            <stroke
-                android:width="1dp"
-                android:color="#F2F2F2" />
-            <corners android:radius="12dp"></corners>
-        </shape>
+        <solid android:color="@color/blanco"></solid>
+        <padding
+            android:bottom="5dp"
+            android:left="2dp"
+            android:right="2dp"
+            android:top="5dp"></padding>
+        <stroke
+            android:width="1dp"
+            android:color="#F2F2F2" />
+        <corners android:radius="12dp"></corners>
+    </shape>
     </item>
 </selector>
