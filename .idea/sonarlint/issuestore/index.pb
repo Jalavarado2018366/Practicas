@@ -111,3 +111,5 @@ Y
 )app/src/main/res/layout/activity_shop.xml,a\0\a07e4b3d325ee8dfdb0b4bffe0c0520d68d761bd
 \
 ,app/src/main/res/drawable/tarjetas_style.xml,5\b\5be36464235434663eabe3eedeae56604814ddf6
+W
+'app/src/main/res/drawable/edt_style.xml,a\b\ab781734210f5d9779141bf158dd4e2cf169d1fe

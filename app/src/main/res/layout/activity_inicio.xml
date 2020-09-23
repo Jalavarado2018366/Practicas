@@ -125,9 +125,9 @@
                     <com.yarolegovich.discretescrollview.DiscreteScrollView
                         android:id="@+id/item_picker"
                         android:layout_width="match_parent"
-                        android:layout_height="173dp"
+                        android:layout_height="220dp"
                         android:layout_gravity="center"
-                        android:layout_marginTop="19dp"
+                        android:layout_marginTop="30dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
@@ -208,7 +208,7 @@
                         <ScrollView
                             android:id="@+id/scrollView2"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="0dp"
                             android:layout_marginTop="80dp"
                             android:fillViewport="true"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -681,6 +681,22 @@
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toBottomOf="@+id/vermas12"
                                     app:srcCompat="@drawable/ver_mas3" />
+
+                                <View
+                                    android:id="@+id/divider_abajo"
+                                    android:layout_width="360dp"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginEnd="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="?android:attr/listDivider"
+                                    android:scrollbarThumbHorizontal="@color/colorPrimaryDark"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="1.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    tools:ignore="MissingConstraints" />
 
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
