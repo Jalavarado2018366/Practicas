@@ -1,2 +1,3 @@
+include ':FDxSDKProAndroid'
 include ':app'
 rootProject.name = "Practicas"
