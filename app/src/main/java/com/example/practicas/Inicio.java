@@ -36,7 +36,8 @@ import java.util.List;
 public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnItemChangedListener<ShopAdapter.ViewHolder>,
         View.OnClickListener {
     private Button Abrir_Whatsapp;
-    private ImageButton Notification;
+    private ImageView Notification;
+    private ImageView whatsapp;
     private PendingIntent pendingIntent;
     private final static String CHANNEL_ID = "NOTIFICACION";
     private final static int NOTIFICACION_ID = 0;
@@ -83,6 +84,7 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
 
         Abrir_Whatsapp = findViewById(R.id.button_w);
         Notification = findViewById((R.id.btNotification));
+        whatsapp = findViewById(R.id.img_whatsapp);
         currentItemPrice = findViewById(R.id.item_price);
         currentItemfechaCorte = findViewById(R.id.txt_fechaCorte);
         currentItemfechaPago = findViewById(R.id.txt_fechaPago);
@@ -141,6 +143,12 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
             public void onClick(View view) {
                 createNotification();
                 createNotificationChannel();
+            }
+        });
+        whatsapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AbrirWhatsAppInicio( "44361724");
             }
         });
         Abrir_Whatsapp.setOnClickListener(new View.OnClickListener() {

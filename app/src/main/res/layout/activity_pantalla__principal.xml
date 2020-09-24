@@ -138,7 +138,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_password" />
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/imageButton"
                 android:layout_width="51dp"
                 android:layout_height="49dp"
@@ -148,7 +148,7 @@
                 app:layout_constraintHorizontal_chainStyle="spread"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button"
-                app:srcCompat="@drawable/sucursal_inicio" />
+                app:srcCompat="@drawable/sucursaleees" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -161,7 +161,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/imageButton2"
                 android:layout_width="51dp"
                 android:layout_height="48dp"
@@ -170,7 +170,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageButton"
                 app:layout_constraintTop_toBottomOf="@+id/button"
-                app:srcCompat="@drawable/whatsapp_icono" />
+                app:srcCompat="@drawable/whatsapp" />
 
             <TextView
                 android:id="@+id/textView5"

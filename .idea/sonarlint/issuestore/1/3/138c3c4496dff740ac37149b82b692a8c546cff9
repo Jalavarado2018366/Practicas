@@ -1,56 +1,60 @@
 
-C
-java:S1659M"&Declare "visible1" on a separate line.(Ù¤þá8˜˜›—Ë.
-}	java:S116B"\Rename this field "credito_utilizado" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ý½ŸŽýÿÿÿÿ8«ìäàË.
-g
-java:S1124)"EReorder the modifiers to comply with the Java Language Specification.(ÊäŠ®ÿÿÿÿÿ8½ùæÀÉ.
-L
-java:S1659L"*Declare "movimiento_4" on a separate line.(Èµô¾ûÿÿÿÿ8¿œ—Ë.
-s	java:S117É"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÝ©¹úÿÿÿÿ8þ·€áË.
-S
-java:S1128"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ä¹éÀÉ.
-}
-java:S1450'"[Remove the "Notification" field and declare it as a local variable in the relevant methods.(õ®ÿ­øÿÿÿÿ8½ùæÀÉ.
-z	java:S116A"YRename this field "limite_credito" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¯ð¸üÿÿÿÿ8«ìäàË.
-x	java:S116L"WRename this field "movimiento_2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èµô¾ûÿÿÿÿ8ÌÍ£ìÉ.
-g
-java:S1124*"EReorder the modifiers to comply with the Java Language Specification.(Ðß¯þÿÿÿÿ8½ùæÀÉ.
-u	java:S116&"YRename this field "Abrir_Whatsapp" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÞßÙö8½ùæÀÉ.
+p
+java:S1450."SRemove the "shop" field and declare it as a local variable in the relevant methods.(ÛËŽ˜8Íœï—Ë.
+x	java:S116M"WRename this field "movimiento_3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èµô¾ûÿÿÿÿ8´—Ë.
 †
-java:S3252±"hUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_SHORT".(Ã£Ðä8þ·€áË.
-{	java:S116C"ZRename this field "disponible_Visa" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öàÜâÿÿÿÿÿ8´„ìàË.
-S
-java:S2209€"5Change this instance-reference to a static reference.(Žµä 8þ·€áË.
+java:S3252¹"hUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_SHORT".(Ã£Ðä8þ·€áË.
+}
+java:S1450'"[Remove the "Notification" field and declare it as a local variable in the relevant methods.(™ˆ‡´ùÿÿÿÿ8½ùæÀÉ.
+{	java:S116D"ZRename this field "disponible_Visa" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öàÜâÿÿÿÿÿ8´„ìàË.
+~	java:S116E"]Rename this field "disponible_retiros" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùµôŽúÿÿÿÿ8´„ìàË.
 P
-java:S1068."3Remove this unused "currentItemName" private field.(¶°ß¢8×‡®—Ê.
-x	java:S116'"WRename this field "Notification" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ®ÿ­øÿÿÿÿ8½ùæÀÉ.
-B
-java:S1659M"%Declare "ocultar" on a separate line.(Ù¤þá8£ëŠíÉ.
-?	java:S131Ñ""Add a default case to this switch.(ŽºÖ8þ·€áË.
-N
-java:S1068("1Remove this unused "pendingIntent" private field.(Œ¬¨Â8½ùæÀÉ.
-~	java:S116D"]Rename this field "disponible_retiros" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùµôŽúÿÿÿÿ8´„ìàË.
-C
-java:S1659M"&Declare "ocultar1" on a separate line.(Ù¤þá8˜˜›—Ë.
-x	java:S116L"WRename this field "movimiento_4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èµô¾ûÿÿÿÿ8¿œ—Ë.
+java:S1068/"3Remove this unused "currentItemName" private field.(¶°ß¢8×‡®—Ê.
+L
+java:S1659M"*Declare "movimiento_4" on a separate line.(Èµô¾ûÿÿÿÿ8¿œ—Ë.
+X
+java:S2209ñ"5Change this instance-reference to a static reference.(ÕÅ§Ëÿÿÿÿÿ8þ·€áË.
+t
+java:S1450("WRemove the "whatsapp" field and declare it as a local variable in the relevant methods.(åš§‡8òü¹ðË.
+x	java:S116'"WRename this field "Notification" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ˆ‡´ùÿÿÿÿ8½ùæÀÉ.
 [
 java:S1128">Remove this unused import 'android.provider.ContactsContract'.(üç§±8ð‘Ü—Ë.
+x	java:S116M"WRename this field "movimiento_2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èµô¾ûÿÿÿÿ8ÌÍ£ìÉ.
 X	java:S110$"<This class has 9 parents which is greater than 5 authorized.(ý»Ù£8½ùæÀÉ.
+S
+java:S1128"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ä¹éÀÉ.
+L
+java:S1659M"*Declare "movimiento_2" on a separate line.(Èµô¾ûÿÿÿÿ8–ÜªìÉ.
+C
+java:S1659N"&Declare "ocultar1" on a separate line.(Ù¤þá8˜˜›—Ë.
+z	java:S116B"YRename this field "limite_credito" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¯ð¸üÿÿÿÿ8«ìäàË.
+g
+java:S1124+"EReorder the modifiers to comply with the Java Language Specification.(Ðß¯þÿÿÿÿ8½ùæÀÉ.
+p	java:S100Ð"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡û¬øÿÿÿÿ8þ·€áË.
+{	java:S116A"ZRename this field "saldo_en_puntos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«Ùøúùÿÿÿÿ8«ìäàË.
+B
+java:S1659N"%Declare "ocultar" on a separate line.(Ù¤þá8£ëŠíÉ.
+_
+java:S1144¸"<Remove this unused private "showUnsupportedSnackBar" method.(œÉìÐúÿÿÿÿ8þ·€áË.
 z
 java:S1450&"]Remove the "Abrir_Whatsapp" field and declare it as a local variable in the relevant methods.(ÞßÙö8½ùæÀÉ.
-p
-java:S1450-"SRemove the "shop" field and declare it as a local variable in the relevant methods.(ÛËŽ˜8Íœï—Ë.
-X
-java:S2209é"5Change this instance-reference to a static reference.(ÕÅ§Ëÿÿÿÿÿ8þ·€áË.
-p	java:S100È"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡û¬øÿÿÿÿ8þ·€áË.
+g
+java:S1124*"EReorder the modifiers to comply with the Java Language Specification.(ÊäŠ®ÿÿÿÿÿ8½ùæÀÉ.
+}	java:S116C"\Rename this field "credito_utilizado" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ý½ŸŽýÿÿÿÿ8«ìäàË.
+C
+java:S1659N"&Declare "visible1" on a separate line.(Ù¤þá8˜˜›—Ë.
+?	java:S131Ù""Add a default case to this switch.(ŽºÖ8þ·€áË.
+u	java:S116&"YRename this field "Abrir_Whatsapp" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÞßÙö8½ùæÀÉ.
 L
-java:S1659L"*Declare "movimiento_2" on a separate line.(Èµô¾ûÿÿÿÿ8–ÜªìÉ.
-_
-java:S1144°"<Remove this unused private "showUnsupportedSnackBar" method.(œÉìÐúÿÿÿÿ8þ·€áË.
+java:S1659M"*Declare "movimiento_3" on a separate line.(Èµô¾ûÿÿÿÿ8´—Ë.
+x	java:S116M"WRename this field "movimiento_1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èµô¾ûÿÿÿÿ8–ÜªìÉ.
+s	java:S117Ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÝ©¹úÿÿÿÿ8þ·€áË.
+Y
+java:S1128"7Remove this unused import 'android.widget.ImageButton'.(‚ÏÉõÿÿÿÿÿ8›¼ŽïË.
+S
+java:S2209ˆ"5Change this instance-reference to a static reference.(Žµä 8þ·€áË.
+x	java:S116M"WRename this field "movimiento_4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èµô¾ûÿÿÿÿ8¿œ—Ë.
 U
 java:S1128"8Remove this unused import 'androidx.annotation.NonNull'.(ˆÛúÜ8½ùæÀÉ.
-{	java:S116@"ZRename this field "saldo_en_puntos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«Ùøúùÿÿÿÿ8«ìäàË.
-x	java:S116L"WRename this field "movimiento_3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èµô¾ûÿÿÿÿ8´—Ë.
-L
-java:S1659L"*Declare "movimiento_3" on a separate line.(Èµô¾ûÿÿÿÿ8´—Ë.
-x	java:S116L"WRename this field "movimiento_1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èµô¾ûÿÿÿÿ8–ÜªìÉ.
+N
+java:S1068)"1Remove this unused "pendingIntent" private field.(Œ¬¨Â8½ùæÀÉ.

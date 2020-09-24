@@ -12,12 +12,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Pantalla_Principal extends AppCompatActivity {
     private EditText txt_Usuario, txt_Contrasena;
     private Button buttonOk;
-    private ImageButton whatsApp;
+    private ImageView whatsApp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

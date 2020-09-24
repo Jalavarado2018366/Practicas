@@ -1,21 +1,23 @@
 
-X	java:S110"<This class has 9 parents which is greater than 5 authorized.(ÁÍöÉ8îòÜşÆ.
-m	java:S117M"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª‘Ü8Å¥÷šÇ.
-y
-java:S1450"WRemove the "whatsApp" field and declare it as a local variable in the relevant methods.(æüêÿÿÿÿÿ8”ÌÕşÆ.
-w	java:S116"VRename this field "txt_Usuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ÏÚüÿÿÿÿ8”ÌÕşÆ.
-z	java:S116"YRename this field "txt_Contrasena" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ÏÚüÿÿÿÿ8”ÌÕşÆ.
-
-java:S11869"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(á¬‡İ8”ÌÕşÆ.
-r	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹…“‹ıÿÿÿÿ8Å¥÷šÇ.
-
-java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(á¬‡İ8”ÌÕşÆ.
-
-java:S1186."€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Œğ£Â8”ÌÕşÆ.
-
-java:S1186>"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Œğ£Â8”ÌÕşÆ.
 N
-java:S1659",Declare "txt_Contrasena" on a separate line.(¡ÏÚüÿÿÿÿ8”ÌÕşÆ.
-j	java:S100["NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ã§¯8”ÌÕşÆ.
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÁÍöÉ8”ÌÕşÆ.
-r	java:S117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éİ©¹úÿÿÿÿ8”ÌÕşÆ.
+java:S1659",Declare "txt_Contrasena" on a separate line.(¡ÏÚüÿÿÿÿ8”ÌÕşÆ.
+
+java:S1186?"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Œğ£Â8”ÌÕşÆ.
+z	java:S116"YRename this field "txt_Contrasena" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ÏÚüÿÿÿÿ8”ÌÕşÆ.
+r	java:S117L"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹…“‹ıÿÿÿÿ8Å¥÷šÇ.
+y
+java:S1450"WRemove the "whatsApp" field and declare it as a local variable in the relevant methods.(î’É‹ûÿÿÿÿ8”ÌÕşÆ.
+Y
+java:S1128"7Remove this unused import 'android.widget.ImageButton'.(‚ÏÉõÿÿÿÿÿ8˜“¥ğË.
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÁÍöÉ8”ÌÕşÆ.
+
+java:S1186*"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(á¬‡İ8”ÌÕşÆ.
+w	java:S116"VRename this field "txt_Usuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ÏÚüÿÿÿÿ8”ÌÕşÆ.
+r	java:S117]"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éİ©¹úÿÿÿÿ8”ÌÕşÆ.
+X	java:S110"<This class has 9 parents which is greater than 5 authorized.(ÁÍöÉ8îòÜşÆ.
+
+java:S1186:"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(á¬‡İ8”ÌÕşÆ.
+
+java:S1186/"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Œğ£Â8”ÌÕşÆ.
+j	java:S100\"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ã§¯8”ÌÕşÆ.
+m	java:S117N"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª‘Ü8Å¥÷šÇ.

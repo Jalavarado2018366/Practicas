@@ -136,13 +136,13 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/blanco"
+                        android:background="@drawable/borde_lineas"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/imageView6"
-                        app:layout_constraintVertical_bias="0.083">
+                        app:layout_constraintVertical_bias="0.0">
 
 
                         <TextView
@@ -164,8 +164,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="44dp"
                             android:text="*******"
+                            android:textColor="@color/gris"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.839"
+                            app:layout_constraintHorizontal_bias="0.825"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -229,14 +230,12 @@
                                 <View
                                     android:id="@+id/divider"
                                     android:layout_width="360dp"
-                                    android:layout_height="1dp"
+                                    android:layout_height="0dp"
                                     android:layout_marginLeft="15dp"
                                     android:layout_marginEnd="15dp"
                                     android:layout_marginRight="15dp"
                                     android:background="?android:attr/listDivider"
-                                    android:outlineAmbientShadowColor="@color/colorPrimaryDark"
-                                    android:outlineSpotShadowColor="@color/colorPrimaryDark"
-                                    android:scrollbarThumbHorizontal="@android:color/darker_gray"
+                                    android:scrollbarThumbHorizontal="@color/colorPrimaryDark"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.49"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -249,6 +248,7 @@
                                     android:layout_marginTop="140dp"
                                     android:gravity="left"
                                     android:text="Pago Minimo"
+                                    android:textColor="@color/gris"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.0"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -261,6 +261,7 @@
                                     android:layout_marginTop="5dp"
                                     android:gravity="left"
                                     android:text="Pago Contado"
+                                    android:textColor="@color/gris"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -273,6 +274,7 @@
                                     android:layout_marginTop="5dp"
                                     android:gravity="left"
                                     android:text="Saldo al Corte"
+                                    android:textColor="@color/gris"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -285,6 +287,7 @@
                                     android:layout_marginTop="5dp"
                                     android:gravity="left"
                                     android:text="Saldo al Día"
+                                    android:textColor="@color/gris"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -400,6 +403,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="72dp"
                                     android:text="Fecha de Corte"
+                                    android:textColor="@color/gris"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.0"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -412,6 +416,7 @@
                                     android:layout_marginTop="72dp"
                                     android:gravity="end"
                                     android:text="Fecha de Pago"
+                                    android:textColor="@color/gris"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="1.0"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -423,6 +428,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="4dp"
                                     android:text="Crédito Disponible"
+                                    android:textColor="@color/gris"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.0"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -708,7 +714,7 @@
                             android:layout_height="55dp"
                             android:layout_marginTop="12dp"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.049"
+                            app:layout_constraintHorizontal_bias="0.086"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/scrollView2"
                             app:srcCompat="@drawable/transfer" />
@@ -744,7 +750,7 @@
                             android:text="Pagos"
                             android:textColor="@color/colorPrimaryDark"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.873"
+                            app:layout_constraintHorizontal_bias="0.886"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
