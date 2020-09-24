@@ -9,12 +9,13 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="417dp"
+        android:layout_width="match_parent"
         android:layout_height="210dp"
-        android:background="@drawable/fondo_verde"
+        android:background="@drawable/trama_menu_fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ScrollView
@@ -216,7 +217,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button4" />
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

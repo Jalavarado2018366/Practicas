@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#ffffff"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".Inicio">
 
     <androidx.drawerlayout.widget.DrawerLayout
@@ -16,7 +16,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/fondo_blanco_2">
+            android:background="@drawable/tranparente">
 
             <com.google.android.material.appbar.AppBarLayout
                 android:id="@+id/appBar"
@@ -172,10 +172,10 @@
 
                         <View
                             android:id="@+id/view3"
-                            android:layout_width="30dp"
+                            android:layout_width="35dp"
                             android:layout_height="30dp"
                             android:layout_marginTop="36dp"
-                            android:background="@drawable/ojo"
+                            android:background="@drawable/ver_inactivo"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.923"
                             app:layout_constraintStart_toStartOf="parent"
@@ -213,7 +213,6 @@
                             android:layout_marginTop="80dp"
                             android:fillViewport="true"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="1.0"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
@@ -230,12 +229,11 @@
                                 <View
                                     android:id="@+id/divider"
                                     android:layout_width="360dp"
-                                    android:layout_height="0dp"
+                                    android:layout_height="1dp"
                                     android:layout_marginLeft="15dp"
                                     android:layout_marginEnd="15dp"
                                     android:layout_marginRight="15dp"
-                                    android:background="?android:attr/listDivider"
-                                    android:scrollbarThumbHorizontal="@color/colorPrimaryDark"
+                                    android:background="#2D8038"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.49"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -300,6 +298,7 @@
                                     android:layout_marginTop="5dp"
                                     android:gravity="left"
                                     android:text="Saldo en Puntos"
+                                    android:textColor="@color/gris"
                                     android:visibility="gone"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
@@ -313,6 +312,7 @@
                                     android:layout_marginTop="5dp"
                                     android:gravity="left"
                                     android:text="Límite Crédito"
+                                    android:textColor="@color/gris"
                                     android:visibility="gone"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
@@ -326,6 +326,7 @@
                                     android:layout_marginTop="5dp"
                                     android:gravity="left"
                                     android:text="Crédito Utilizado"
+                                    android:textColor="@color/gris"
                                     android:visibility="gone"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
@@ -339,6 +340,7 @@
                                     android:layout_marginTop="5dp"
                                     android:gravity="left"
                                     android:text="Disponible VisaCuotas"
+                                    android:textColor="@color/gris"
                                     android:visibility="gone"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
@@ -352,6 +354,7 @@
                                     android:layout_marginTop="5dp"
                                     android:gravity="left"
                                     android:text="Disponible Retiros"
+                                    android:textColor="@color/gris"
                                     android:visibility="gone"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
@@ -365,6 +368,7 @@
                                     android:layout_marginTop="5dp"
                                     android:gravity="left"
                                     android:text="Autorizaciones Pendientes"
+                                    android:textColor="@color/gris"
                                     android:visibility="gone"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
@@ -378,6 +382,7 @@
                                     android:layout_marginTop="5dp"
                                     android:gravity="left"
                                     android:text="Disponible"
+                                    android:textColor="@color/gris"
                                     android:visibility="gone"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
@@ -391,6 +396,7 @@
                                     android:layout_marginTop="5dp"
                                     android:gravity="left"
                                     android:text="Extrafinanciamiento"
+                                    android:textColor="@color/gris"
                                     android:visibility="gone"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.00"
@@ -696,8 +702,7 @@
                                     android:layout_marginEnd="15dp"
                                     android:layout_marginRight="15dp"
                                     android:layout_marginBottom="1dp"
-                                    android:background="?android:attr/listDivider"
-                                    android:scrollbarThumbHorizontal="@color/colorPrimaryDark"
+                                    android:background="#2D8038"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="1.0"
@@ -717,7 +722,7 @@
                             app:layout_constraintHorizontal_bias="0.086"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-                            app:srcCompat="@drawable/transfer" />
+                            app:srcCompat="@drawable/transferencia" />
 
                         <TextView
                             android:id="@+id/textView20"

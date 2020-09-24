@@ -195,8 +195,8 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
     private void createNotification(){
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID);
         builder.setSmallIcon(R.drawable.estrella_redondeada);
-        builder.setContentTitle("Notificacion Android");
-        builder.setContentText("Prueba");
+        builder.setContentTitle("Banco Promerica les desea un buen día");
+        builder.setContentText(".");
         builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
         builder.setLights(Color.MAGENTA, 1000, 1000);
         builder.setVibrate(new long[]{1000,1000,1000,1000,1000});
