@@ -63,31 +63,30 @@
                 app:layout_constraintTop_toBottomOf="@+id/txt_user"
                 tools:ignore="MissingConstraints"
                 android:drawableLeft="@drawable/custom_lock_icon" />
-
-            <ImageView
+            <View
                 android:id="@+id/imageView"
-                android:layout_width="413dp"
-                android:layout_height="181dp"
-
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/fondo4" />
+                android:background="@drawable/fondo4" />
 
             <View
                 android:id="@+id/view4"
-                android:layout_width="417dp"
+                android:layout_width="match_parent"
                 android:layout_height="82dp"
-                android:layout_marginTop="104dp"
+                android:layout_marginTop="124dp"
                 android:background="@drawable/fondo_de_inicio"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="111dp"
+                android:layout_width="120dp"
                 android:layout_height="37dp"
                 android:layout_marginTop="252dp"
                 android:text="¡Buenos"
@@ -101,10 +100,10 @@
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="91dp"
-                android:layout_height="35dp"
+                android:layout_height="37dp"
                 android:layout_marginTop="252dp"
                 android:text="Dias!"
-                android:textColor="#64FE2E"
+                android:textColor="@color/verdeclaro"
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView"
@@ -131,7 +130,7 @@
                 android:layout_marginTop="24dp"
                 android:background="@drawable/button_style"
                 android:text="Login"
-                android:textColor="@android:color/holo_green_light"
+                android:textColor="@color/verdeclaro"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.496"
