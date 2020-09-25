@@ -14,7 +14,7 @@ import android.hardware.biometrics.BiometricManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,28 +30,28 @@ public class Huella extends AppCompatActivity {
         setContentView(R.layout.activity_huella);
 
         TextView txt_mgs = findViewById(R.id.txt_mgs);
-        Button login_btn = findViewById(R.id.login_btn);
+        ImageView huella_IV = findViewById(R.id.huella_IV);
 
 
         androidx.biometric.BiometricManager biometricManager = androidx.biometric.BiometricManager.from(this);
         switch (biometricManager.canAuthenticate()) {
             case BiometricManager.BIOMETRIC_SUCCESS:
-                txt_mgs.setText("You Can use the fingerprint sensor to login");
+                txt_mgs.setText("Puede usar el sensor de huellas digitales para iniciar sesión");
                 break;
 
             case BiometricManager.BIOMETRIC_ERROR_NO_HARDWARE:
-                txt_mgs.setText(" The device don't have a fingerprint sensor");
-                login_btn.setVisibility(View.GONE);
+                txt_mgs.setText(" El dispositivo no tiene sensor de huellas dactilares");
+                huella_IV.setVisibility(View.GONE);
                 break;
 
             case BiometricManager.BIOMETRIC_ERROR_HW_UNAVAILABLE:
                 txt_mgs.setText(" The biometric sensor is currently unavailable ");
-                login_btn.setVisibility(View.GONE);
+                huella_IV.setVisibility(View.GONE);
                 break;
 
             case BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED:
-                txt_mgs.setText(" Your divice don't have any fingerprint saved, please check your securty settings ");
-                login_btn.setVisibility(View.GONE);
+                txt_mgs.setText(" Su dispositivo no tiene ninguna huella digital guardada, verifique su configuración de seguridad ");
+                huella_IV.setVisibility(View.GONE);
                 break;
 
         }
@@ -78,12 +78,12 @@ public class Huella extends AppCompatActivity {
         });
 
         final BiometricPrompt.PromptInfo promptInfo = new BiometricPrompt.PromptInfo.Builder().setTitle("Login")
-                .setDescription("User you fingerprint to login to your app")
-                .setNegativeButtonText("Cancel")
+                .setDescription("Utilice su huella digital para iniciar sesión en su aplicación")
+                .setNegativeButtonText("Cancelar")
                 .build();
 
 
-        login_btn.setOnClickListener(new View.OnClickListener() {
+        huella_IV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 biometricPrompt.authenticate(promptInfo);

@@ -18,6 +18,7 @@ import android.widget.Toast;
 public class Pantalla_Principal extends AppCompatActivity {
     private EditText txt_Usuario, txt_Contrasena;
     private Button buttonOk;
+    private Button button_huella;
     private ImageView whatsApp;
 
     @Override
@@ -29,6 +30,8 @@ public class Pantalla_Principal extends AppCompatActivity {
 
         buttonOk = findViewById(R.id.button);
         whatsApp = findViewById(R.id.imageButton2);
+        button_huella = findViewById(R.id.button_huella);
+
 
         whatsApp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,6 +88,15 @@ public class Pantalla_Principal extends AppCompatActivity {
                 }
             }
 
+        });
+
+        //Huella
+        button_huella.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Pantalla_Principal.this, Huella.class);
+                startActivity(intent);
+            }
         });
     }
 
