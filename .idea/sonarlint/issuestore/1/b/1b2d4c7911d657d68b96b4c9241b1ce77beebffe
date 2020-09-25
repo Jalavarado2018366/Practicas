@@ -1,6 +1,6 @@
 
-[
-java:S1117i">Rename "scrollView" which hides the field declared at line 96.(õ ‡Ô8µï“ı».
+	java:S116"^Rename this field "KEY_TRANSITION_TIME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õﬁ¶˚¸ˇˇˇˇ8î≥˘ı».
 a
 java:S3358C"DExtract this nested ternary operation into an independent statement.(«Ò´Õ8µï“ı».
-	java:S116"^Rename this field "KEY_TRANSITION_TIME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õﬁ¶˚¸ˇˇˇˇ8î≥˘ı».
+[
+java:S1117i">Rename "scrollView" which hides the field declared at line 96.(õ ‡Ô8µï“ı».

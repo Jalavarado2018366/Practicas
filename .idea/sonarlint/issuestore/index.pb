@@ -113,9 +113,13 @@ Y
 ,app/src/main/res/drawable/tarjetas_style.xml,5\b\5be36464235434663eabe3eedeae56604814ddf6
 W
 'app/src/main/res/drawable/edt_style.xml,a\b\ab781734210f5d9779141bf158dd4e2cf169d1fe
-Y
-)app/src/main/res/layout/activity_main.xml,7\6\76b07e40f24cce093536731477540f12e7da3cb6
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 A
 gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
+j
+:app/src/main/java/com/example/practicas/Beneficiarios.java,6\1\619ba988555007a274544d3f0d84278db7134ae4
+M
+FDxSDKProAndroid/build.gradle,1\9\1910048e410a23330ba87bcaf8439b930b07b4f7
+c
+3app/src/main/java/com/example/practicas/Huella.java,c\c\cc8309d10ce55b945087758b01aa6929252dc5b5
