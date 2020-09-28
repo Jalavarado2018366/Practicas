@@ -87,6 +87,7 @@ public class Huella extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 biometricPrompt.authenticate(promptInfo);
+
             }
         });
     }
