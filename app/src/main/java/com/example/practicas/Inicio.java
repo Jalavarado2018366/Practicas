@@ -32,6 +32,8 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
         View.OnClickListener {
     private Button Abrir_Whatsapp, Abrir_Beneficiarios;
     private ImageView Notification;
+    private Button button2;
+    private ImageView sucursales;
     private ImageView whatsapp, beneficiarios;
     private PendingIntent pendingIntent;
     private final static String CHANNEL_ID = "NOTIFICACION";
@@ -168,6 +170,29 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
                 AbrirWhatsAppInicio( "44361724");
             }
         });
+
+        //sucursales
+        button2 = (Button)findViewById(R.id.button2);
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),activity_mapas.class);
+                startActivity(intent);
+            }
+        });
+
+
+        sucursales = (ImageView) findViewById(R.id.sucursales);
+
+        sucursales.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),activity_mapas.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
     private void onItemChanged(Item item) {

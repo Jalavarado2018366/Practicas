@@ -17,6 +17,7 @@ public class Activity_Login extends AppCompatActivity {
     private EditText txt_Usuario, txt_Contrasena;
     private Button buttonOk;
     private Button button_huella;
+    private ImageView imageButton;
     private ImageView whatsApp;
 
     @Override
@@ -90,7 +91,7 @@ public class Activity_Login extends AppCompatActivity {
                         }
                     },2000);
                 }else {
-                    Toast.makeText(getApplicationContext(), "verify your email or password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), " verify your email or password ", Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -110,6 +111,17 @@ public class Activity_Login extends AppCompatActivity {
                         startActivity(intent);
                     }
                 },2000);
+            }
+        });
+
+        //Sucursales
+        imageButton = (ImageView)findViewById(R.id.imageButton);
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),activity_mapas.class);
+                startActivity(intent);
             }
         });
     }
