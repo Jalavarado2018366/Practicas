@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Beneficiarios">
+    tools:context=".Beneficiarios"
+    android:background="@color/blanco">
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBar"
         android:layout_width="match_parent"
@@ -37,16 +38,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBar" />
 
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="179dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/blanco"
+        android:text="Cuentas de Terceros"
+        android:textColor="@color/verdeclaro"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"></TextView>
+
     <View
+        android:id="@+id/view2"
         android:layout_width="34dp"
         android:layout_height="39dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/buscar_activo"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBar">
-    </View>
+        app:layout_constraintTop_toBottomOf="@+id/appBar"></View>
+
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
@@ -59,41 +75,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBar" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="179dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="12dp"
-        android:text="Cuentas de Terceros"
-        android:textColor="@color/verdeclaro"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"></TextView>
-
     <View
         android:id="@+id/divider_verde1"
-        android:layout_width="70dp"
+        android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:background="#2D8038"
         app:layout_constraintEnd_toStartOf="@+id/textView17"
-        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
-    <View
-        android:id="@+id/divider_verde2"
-        android:layout_width="70dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="40dp"
-        android:background="#2D8038"
-        app:layout_constraintEnd_toStartOf="@+id/textView16"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/divider" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

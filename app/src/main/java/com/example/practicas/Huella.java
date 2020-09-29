@@ -11,6 +11,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.hardware.biometrics.BiometricManager;
+import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -31,6 +32,7 @@ public class Huella extends AppCompatActivity {
 
         TextView txt_mgs = findViewById(R.id.txt_mgs);
         ImageView huella_IV = findViewById(R.id.huella_IV);
+        ImageView huella_I = findViewById(R.id.huella_I);
 
 
         androidx.biometric.BiometricManager biometricManager = androidx.biometric.BiometricManager.from(this);
@@ -41,17 +43,20 @@ public class Huella extends AppCompatActivity {
 
             case BiometricManager.BIOMETRIC_ERROR_NO_HARDWARE:
                 txt_mgs.setText(" El dispositivo no tiene sensor de huellas dactilares");
-                huella_IV.setVisibility(View.GONE);
+                huella_I.setVisibility(View.GONE);
+                huella_IV.setVisibility(View.VISIBLE);
                 break;
 
             case BiometricManager.BIOMETRIC_ERROR_HW_UNAVAILABLE:
                 txt_mgs.setText(" El sensor biométrico no está disponible actualmente ");
-                huella_IV.setVisibility(View.GONE);
+                huella_I.setVisibility(View.GONE);
+                huella_IV.setVisibility(View.VISIBLE);
                 break;
 
             case BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED:
                 txt_mgs.setText(" Su dispositivo no tiene ninguna huella digital guardada, verifique su configuración de seguridad ");
-                huella_IV.setVisibility(View.GONE);
+                huella_I.setVisibility(View.GONE);
+                huella_IV.setVisibility(View.VISIBLE);
                 break;
 
         }
@@ -87,7 +92,6 @@ public class Huella extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 biometricPrompt.authenticate(promptInfo);
-
             }
         });
     }

@@ -20,39 +20,51 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView22"
         android:layout_width="161dp"
         android:layout_height="70dp"
         android:text="Inicia Seción con tu huella"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
     <ImageView
         android:id="@+id/huella_IV"
         android:layout_width="87dp"
         android:layout_height="114dp"
         android:layout_marginVertical="20dp"
-        android:background="@drawable/ic_stylehuella"
+        android:visibility="gone"
+        android:background="@drawable/huella_inactivo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539" />
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/huella_I"
+        android:layout_width="87dp"
+        android:layout_height="114dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/huella_activo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/txt_mgs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="140dp"
         android:textSize="19dp"
         android:textColor="@color/verdeclaro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/huella_IV" />
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <ImageView
         android:id="@+id/imageView10"
