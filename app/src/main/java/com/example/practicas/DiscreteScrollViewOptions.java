@@ -35,28 +35,6 @@ public class DiscreteScrollViewOptions {
         KEY_TRANSITION_TIME = context.getString(R.string.pref_key_transition_time);
     }
 
-    public static void configureTransitionTime(DiscreteScrollView scrollView) {
-        final BottomSheetDialog bsd = new BottomSheetDialog(scrollView.getContext());
-        final TransitionTimeChangeListener timeChangeListener = new TransitionTimeChangeListener(scrollView);
-        bsd.setContentView(R.layout.dialog_transition_time);
-        defaultPrefs().registerOnSharedPreferenceChangeListener(timeChangeListener);
-        bsd.setOnDismissListener(new DialogInterface.OnDismissListener() {
-            @Override
-            public void onDismiss(DialogInterface dialog) {
-                defaultPrefs().unregisterOnSharedPreferenceChangeListener(timeChangeListener);
-            }
-        });
-        View dismissBtn = bsd.findViewById(R.id.dialog_btn_dismiss);
-        if (dismissBtn != null) {
-            dismissBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    bsd.dismiss();
-                }
-            });
-        }
-        bsd.show();
-    }
 
     public static void smoothScrollToUserSelectedPosition(final DiscreteScrollView scrollView, View anchor) {
         PopupMenu popupMenu = new PopupMenu(scrollView.getContext(), anchor);

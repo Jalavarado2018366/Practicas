@@ -36,7 +36,7 @@ public class Huella extends AppCompatActivity {
         androidx.biometric.BiometricManager biometricManager = androidx.biometric.BiometricManager.from(this);
         switch (biometricManager.canAuthenticate()) {
             case BiometricManager.BIOMETRIC_SUCCESS:
-                txt_mgs.setText("Puede usar el sensor de huellas digitales para iniciar sesión");
+                txt_mgs.setText("!Buen día");
                 break;
 
             case BiometricManager.BIOMETRIC_ERROR_NO_HARDWARE:
@@ -45,7 +45,7 @@ public class Huella extends AppCompatActivity {
                 break;
 
             case BiometricManager.BIOMETRIC_ERROR_HW_UNAVAILABLE:
-                txt_mgs.setText(" The biometric sensor is currently unavailable ");
+                txt_mgs.setText(" El sensor biométrico no está disponible actualmente ");
                 huella_IV.setVisibility(View.GONE);
                 break;
 

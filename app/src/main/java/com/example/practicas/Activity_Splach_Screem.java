@@ -7,21 +7,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-public class MainActivity extends Activity {
+public class Activity_Splach_Screem extends Activity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity__splach__screem);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
 
-                Intent intent = new Intent(MainActivity.this, Pantalla_Principal.class);
+                Intent intent = new Intent(Activity_Splach_Screem.this, Activity_Login.class);
                 startActivity(intent);
-                MainActivity.this.finish();
+                Activity_Splach_Screem.this.finish();
             }
         }, 2000);
     }

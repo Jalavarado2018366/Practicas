@@ -1,7 +1,6 @@
 package com.example.practicas;
 
 
-import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -10,16 +9,12 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.telephony.PhoneNumberUtils;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
@@ -33,17 +28,17 @@ import com.yarolegovich.discretescrollview.transform.ScaleTransformer;
 
 import java.util.List;
 
-public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnItemChangedListener<ShopAdapter.ViewHolder>,
+public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnItemChangedListener<TarjetasAdapter.ViewHolder>,
         View.OnClickListener {
-    private Button Abrir_Whatsapp;
+    private Button Abrir_Whatsapp, Abrir_Beneficiarios;
     private ImageView Notification;
-    private ImageView whatsapp;
+    private ImageView whatsapp, beneficiarios;
     private PendingIntent pendingIntent;
     private final static String CHANNEL_ID = "NOTIFICACION";
     private final static int NOTIFICACION_ID = 0;
 
     private List<Item> data;
-    private Shop shop;
+    private Activity_tarjetas activitytarjetas;
     private TextView currentItemName;
     private TextView currentItemPrice;
     private TextView currentItemfechaCorte;
@@ -83,8 +78,10 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
         setContentView(R.layout.activity_inicio);
 
         Abrir_Whatsapp = findViewById(R.id.button_w);
+        Abrir_Beneficiarios = findViewById(R.id.btn_beneficiarios);
         Notification = findViewById((R.id.btNotification));
         whatsapp = findViewById(R.id.img_whatsapp);
+        beneficiarios = findViewById(R.id.img_beneficiarios);
         currentItemPrice = findViewById(R.id.item_price);
         currentItemfechaCorte = findViewById(R.id.txt_fechaCorte);
         currentItemfechaPago = findViewById(R.id.txt_fechaPago);
@@ -124,12 +121,12 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
         findViewById(R.id.imageVie).setOnClickListener(this);
         findViewById(R.id.imageVie12).setOnClickListener(this);
 
-        shop = Shop.get();
-        data = shop.getData();
+        activitytarjetas = Activity_tarjetas.get();
+        data = activitytarjetas.getData();
         itemPicker = findViewById(R.id.item_picker);
         itemPicker.setOrientation(DSVOrientation.HORIZONTAL);
         itemPicker.addOnItemChangedListener(this);
-        infiniteAdapter = InfiniteScrollAdapter.wrap(new ShopAdapter(data));
+        infiniteAdapter = InfiniteScrollAdapter.wrap(new TarjetasAdapter(data));
         itemPicker.setAdapter(infiniteAdapter);
         itemPicker.setItemTransitionTimeMillis(DiscreteScrollViewOptions.getTransitionTime());
         itemPicker.setItemTransformer(new ScaleTransformer.Builder()
@@ -145,10 +142,24 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
                 createNotificationChannel();
             }
         });
+        beneficiarios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Inicio.this, Beneficiarios.class);
+                startActivity(intent);
+            }
+        });
         whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AbrirWhatsAppInicio( "44361724");
+            }
+        });
+        Abrir_Beneficiarios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Inicio.this, Beneficiarios.class);
+                startActivity(intent);
             }
         });
         Abrir_Whatsapp.setOnClickListener(new View.OnClickListener() {
@@ -176,7 +187,7 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
         currentItemExtrafinanciamiento.setText(item.getExtrafinaciamiento());
     }
     @Override
-    public void onCurrentItemChanged(@Nullable ShopAdapter.ViewHolder viewHolder, int adapterPosition) {
+    public void onCurrentItemChanged(@Nullable TarjetasAdapter.ViewHolder viewHolder, int adapterPosition) {
         int positionInDataSet = infiniteAdapter.getRealPosition(adapterPosition);
         onItemChanged(data.get(positionInDataSet));
     }

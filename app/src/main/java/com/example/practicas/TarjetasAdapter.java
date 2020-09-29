@@ -17,11 +17,11 @@ import java.util.List;
  * Created by yarolegovich on 07.03.2017.
  */
 
-public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ViewHolder> {
+public class TarjetasAdapter extends RecyclerView.Adapter<TarjetasAdapter.ViewHolder> {
 
     private List<Item> data;
 
-    public ShopAdapter(List<Item> data) {
+    public TarjetasAdapter(List<Item> data) {
         this.data = data;
     }
 
@@ -29,7 +29,7 @@ public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ViewHolder> {
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View v = inflater.inflate(R.layout.item_shop_card, parent, false);
+        View v = inflater.inflate(R.layout.activity_cards, parent, false);
         return new ViewHolder(v);
     }
 

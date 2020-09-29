@@ -6,21 +6,17 @@ import android.content.SharedPreferences;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Created by yarolegovich on 07.03.2017.
- */
-
-public class Shop {
+public class Activity_tarjetas {
 
     private static final String STORAGE = "shop";
 
-    public static Shop get() {
-        return new Shop();
+    public static Activity_tarjetas get() {
+        return new Activity_tarjetas();
     }
 
     private SharedPreferences storage;
 
-    private Shop() {
+    private Activity_tarjetas() {
         storage = App.getInstance().getSharedPreferences(STORAGE, Context.MODE_PRIVATE);
     }
 

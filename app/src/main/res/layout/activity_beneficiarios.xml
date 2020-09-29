@@ -41,6 +41,7 @@
         android:layout_width="34dp"
         android:layout_height="39dp"
         android:layout_marginTop="12dp"
+        android:background="@drawable/buscar_activo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toStartOf="parent"

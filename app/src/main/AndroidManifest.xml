@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.practicas">
 
-    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 
     <application
         android:name=".App"
@@ -12,18 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Activity_LoadinDialog"></activity>
+        <activity android:name=".Activity_Login" />
         <activity android:name=".Huella" />
         <activity android:name=".Beneficiarios" />
         <activity android:name=".DiscreteScrollViewOptions" />
-        <activity android:name=".ShopAdapter" />
-        <activity android:name=".ShopActivity" />
-        <activity android:name=".Shop" />
+        <activity android:name=".TarjetasAdapter" />
+        <activity android:name=".Activity_tarjetas" />
         <activity android:name=".Item" />
         <activity android:name=".drawer_layout" />
         <activity android:name=".Inicio" />
-        <activity android:name=".Pantalla_Principal" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity_Splach_Screem"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
