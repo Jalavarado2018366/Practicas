@@ -1,6 +1,7 @@
 package com.example.practicas;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +12,8 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;import android.widget.Toast;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class Activity_Login extends AppCompatActivity {
     private EditText txt_Usuario, txt_Contrasena;
@@ -35,7 +37,7 @@ public class Activity_Login extends AppCompatActivity {
         whatsApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AbrirWhatsApp( "44361724");
+                AbrirWhatsApp("44361724");
             }
         });
 
@@ -74,23 +76,23 @@ public class Activity_Login extends AppCompatActivity {
 
         buttonOk.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view ) {
+            public void onClick(View view) {
                 String V_User = txt_Usuario.getText().toString();
                 txt_Usuario.setText("");
                 String V_Pass = txt_Contrasena.getText().toString();
                 txt_Contrasena.getText().clear();
-                if(V_User.equals("kinal@gmail.com") && V_Pass.equals("123")){
+                if (V_User.equals("kinal@gmail.com") && V_Pass.equals("123")) {
                     activity_loadinDialog.startLoadingDialog();
-                    Handler handler = new Handler( );
+                    Handler handler = new Handler();
                     handler.postDelayed(new Runnable() {
                         @Override
                         public void run() {
                             activity_loadinDialog.dimissDialog();
-                            Intent intent = new Intent(getApplicationContext(),Inicio.class);
+                            Intent intent = new Intent(getApplicationContext(), Inicio.class);
                             startActivity(intent);
                         }
-                    },2000);
-                }else {
+                    }, 2000);
+                } else {
                     Toast.makeText(getApplicationContext(), " verify your email or password ", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -102,30 +104,29 @@ public class Activity_Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 activity_loadinDialog.startLoadingDialog();
-                Handler handler = new Handler( );
+                Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         activity_loadinDialog.dimissDialog();
-                        Intent intent = new Intent(getApplicationContext(),Huella.class);
+                        Intent intent = new Intent(getApplicationContext(), Huella.class);
                         startActivity(intent);
                     }
-                },2000);
+                }, 2000);
             }
         });
 
         //Sucursales
-        imageButton = (ImageView)findViewById(R.id.imageButton);
+        imageButton = (ImageView) findViewById(R.id.imageButton);
 
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),activity_mapas.class);
+                Intent intent = new Intent(getApplicationContext(), activity_mapas.class);
                 startActivity(intent);
             }
         });
     }
-
 
 
     public void AbrirWhatsApp(String telefono) {

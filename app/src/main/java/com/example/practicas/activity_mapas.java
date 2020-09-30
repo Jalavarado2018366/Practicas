@@ -52,10 +52,10 @@ public class activity_mapas extends FragmentActivity implements OnMapReadyCallba
         mMap.addMarker(new MarkerOptions().position(unicentro).title("Guatemala City Unicentro, Banco Promerica")
                 .snippet("20 calle 534, Cdad. de Guatemala").icon(BitmapDescriptorFactory.fromResource(R.drawable.localization)));
 
-        LatLng Bulevar  = new LatLng(14.6073244, -90.4859061);
-        mMap.addMarker(new MarkerOptions().position(Bulevar ).title("Guatemala City La Playa, Banco Promerica")
+        LatLng Bulevar = new LatLng(14.6073244, -90.4859061);
+        mMap.addMarker(new MarkerOptions().position(Bulevar).title("Guatemala City La Playa, Banco Promerica")
                 .snippet("Bulevar Rafael Landivar 10, Cdad. de Guatemala").icon(BitmapDescriptorFactory.fromResource(R.drawable.localization)));
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(guatemala,15));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(guatemala, 15));
     }
 }

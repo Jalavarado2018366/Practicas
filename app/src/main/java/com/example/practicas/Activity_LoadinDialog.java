@@ -10,22 +10,22 @@ public class Activity_LoadinDialog {
     Activity activity;
     AlertDialog dialog;
 
-    Activity_LoadinDialog(Activity myActivity){
+    Activity_LoadinDialog(Activity myActivity) {
         activity = myActivity;
     }
 
-    void startLoadingDialog(){
+    void startLoadingDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
 
         LayoutInflater inflater = activity.getLayoutInflater();
-        builder.setView(inflater.inflate(R.layout.activity__loadin_dialog,null));
+        builder.setView(inflater.inflate(R.layout.activity__loadin_dialog, null));
         builder.setCancelable(false);
 
         dialog = builder.create();
         dialog.show();
     }
 
-    void  dimissDialog(){
+    void dimissDialog() {
         dialog.dismiss();
     }
 }

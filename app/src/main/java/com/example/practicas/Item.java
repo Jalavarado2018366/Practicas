@@ -46,19 +46,33 @@ public class Item {
         return price;
     }
 
-    public String getFecha_corte(){ return fecha_corte; }
+    public String getFecha_corte() {
+        return fecha_corte;
+    }
 
-    public String getFecha_pago(){ return fecha_pago; }
+    public String getFecha_pago() {
+        return fecha_pago;
+    }
 
-    public String getPago_minimo(){ return  pago_minimo;}
+    public String getPago_minimo() {
+        return pago_minimo;
+    }
 
-    public String getPago_contado(){ return  pago_contado;}
+    public String getPago_contado() {
+        return pago_contado;
+    }
 
-    public String getSaldo_al_corte(){ return  saldo_al_corte;}
+    public String getSaldo_al_corte() {
+        return saldo_al_corte;
+    }
 
-    public String getSaldo_al_dia(){ return saldo_al_dia;}
+    public String getSaldo_al_dia() {
+        return saldo_al_dia;
+    }
 
-    public String getSaldo_en_puntos() { return saldo_en_puntos; }
+    public String getSaldo_en_puntos() {
+        return saldo_en_puntos;
+    }
 
     public String getLimite_credito() {
         return limite_credito;

@@ -61,7 +61,7 @@ public class Huella extends AppCompatActivity {
 
         }
 
-        Executor executor = ContextCompat.getMainExecutor(this );
+        Executor executor = ContextCompat.getMainExecutor(this);
 
         final BiometricPrompt biometricPrompt = new BiometricPrompt(Huella.this, executor, new BiometricPrompt.AuthenticationCallback() {
             @Override

@@ -20,8 +20,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:fillViewport="true"
         android:layout_height="0dp"
+        android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -183,8 +183,8 @@
                 android:textSize="13dp"
                 android:typeface="serif"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/guideline"
                 app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
                 app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
             <View
@@ -254,8 +254,8 @@
         android:id="@+id/btNotification"
         android:layout_width="47dp"
         android:layout_height="49dp"
-        android:foregroundGravity="left"
         android:background="@drawable/notification_style"
+        android:foregroundGravity="left"
         app:layout_constraintCircleRadius="100dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -283,8 +283,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/perfil" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

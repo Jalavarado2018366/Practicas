@@ -33,12 +33,10 @@ public class drawer_layout extends AppCompatActivity {
         whats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AbrirWhatsAppInicio( "44361724");
+                AbrirWhatsAppInicio("44361724");
             }
         });
     }
-
-
 
 
     public void AbrirWhatsAppInicio(String telefono) {

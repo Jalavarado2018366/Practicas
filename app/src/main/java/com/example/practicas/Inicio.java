@@ -31,8 +31,8 @@ import java.util.List;
 public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnItemChangedListener<TarjetasAdapter.ViewHolder>,
         View.OnClickListener {
     private View Abrir_Pagos;
-    private Button Abrir_Whatsapp, Abrir_Beneficiarios,Abrir_Medios_de_pago;
-    private ImageView Notification,Medios_de_pago,Abrir_Transferencias;
+    private Button Abrir_Whatsapp, Abrir_Beneficiarios, Abrir_Medios_de_pago;
+    private ImageView Notification, Medios_de_pago, Abrir_Transferencias;
     private Button button2;
     private ImageView sucursales;
     private ImageView whatsapp, beneficiarios;
@@ -72,8 +72,8 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
     private DiscreteScrollView itemPicker;
     private InfiniteScrollAdapter<?> infiniteAdapter;
 
-    TextView movimiento_1,movimiento_2,movimiento_3,movimiento_4;
-    ImageView visible,ocultar,visible1,ocultar1;
+    TextView movimiento_1, movimiento_2, movimiento_3, movimiento_4;
+    ImageView visible, ocultar, visible1, ocultar1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +82,7 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
 
         Abrir_Whatsapp = findViewById(R.id.button_w);
         Abrir_Beneficiarios = findViewById(R.id.btn_beneficiarios);
-        Abrir_Transferencias = findViewById(R.id.img_beneficiarios);
+        Abrir_Transferencias = findViewById(R.id.img_transferencias);
         Abrir_Medios_de_pago = findViewById(R.id.btn_medios_de_pagos);
         Notification = findViewById((R.id.btNotification));
         Abrir_Pagos = findViewById(R.id.view_Pago);
@@ -118,7 +118,7 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
         movimiento_2 = (TextView) findViewById(R.id.textView8);
         movimiento_3 = (TextView) findViewById(R.id.vermas);
         movimiento_4 = (TextView) findViewById(R.id.vermas12);
-            visible = findViewById(R.id.imageView6);
+        visible = findViewById(R.id.imageView6);
         ocultar = (ImageView) findViewById(R.id.imageView3);
         visible1 = (ImageView) findViewById(R.id.imageVie);
         ocultar1 = (ImageView) findViewById(R.id.imageVie12);
@@ -179,7 +179,7 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
         whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AbrirWhatsAppInicio( "44361724");
+                AbrirWhatsAppInicio("44361724");
             }
         });
         Abrir_Medios_de_pago.setOnClickListener(new View.OnClickListener() {
@@ -199,17 +199,17 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
         Abrir_Whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AbrirWhatsAppInicio( "44361724");
+                AbrirWhatsAppInicio("44361724");
             }
         });
 
         //sucursales
-        button2 = (Button)findViewById(R.id.button2);
+        button2 = (Button) findViewById(R.id.button2);
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),activity_mapas.class);
+                Intent intent = new Intent(getApplicationContext(), activity_mapas.class);
                 startActivity(intent);
             }
         });
@@ -220,13 +220,14 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
         sucursales.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),activity_mapas.class);
+                Intent intent = new Intent(getApplicationContext(), activity_mapas.class);
                 startActivity(intent);
             }
         });
 
 
     }
+
     private void onItemChanged(Item item) {
         currentItemPrice.setText(item.getPrice());
         currentItemfechaCorte.setText(item.getFecha_corte());
@@ -243,6 +244,7 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
         currentItemAutorizaciones.setText(item.getAutorizacion());
         currentItemExtrafinanciamiento.setText(item.getExtrafinaciamiento());
     }
+
     @Override
     public void onCurrentItemChanged(@Nullable TarjetasAdapter.ViewHolder viewHolder, int adapterPosition) {
         int positionInDataSet = infiniteAdapter.getRealPosition(adapterPosition);
@@ -252,27 +254,30 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
     private void showUnsupportedSnackBar() {
         Snackbar.make(itemPicker, R.string.msg_unsupported_op, Snackbar.LENGTH_SHORT).show();
     }
-    private void createNotificationChannel(){
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+
+    private void createNotificationChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             CharSequence name = "Noticacion";
             NotificationChannel notificationChannel = new NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_DEFAULT);
             NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
             notificationManager.createNotificationChannel(notificationChannel);
         }
     }
-    private void createNotification(){
+
+    private void createNotification() {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID);
         builder.setSmallIcon(R.drawable.estrella_redondeada);
         builder.setContentTitle("Banco Promerica");
         builder.setContentText("Les desea un buen día");
         builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
         builder.setLights(Color.MAGENTA, 1000, 1000);
-        builder.setVibrate(new long[]{1000,1000,1000,1000,1000});
+        builder.setVibrate(new long[]{1000, 1000, 1000, 1000, 1000});
         builder.setDefaults(android.app.Notification.DEFAULT_SOUND);
 
         NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(getApplicationContext());
         notificationManagerCompat.notify(NOTIFICACION_ID, builder.build());
     }
+
     public void AbrirWhatsAppInicio(String telefono) {
         Intent _intencion = new Intent("android.intent.action.MAIN");
         _intencion.setComponent(new ComponentName("com.whatsapp", "com.whatsapp.Conversation"));
@@ -284,7 +289,7 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.imageView3:
-                if(movimiento_1.getVisibility() == View.GONE){
+                if (movimiento_1.getVisibility() == View.GONE) {
                     movimiento_1.setVisibility(View.VISIBLE);
                     movimiento_2.setVisibility(View.VISIBLE);
                     visible.setVisibility(View.VISIBLE);
@@ -292,7 +297,7 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
                 }
                 break;
             case R.id.imageView6:
-                if(movimiento_1.getVisibility() == View.VISIBLE){
+                if (movimiento_1.getVisibility() == View.VISIBLE) {
                     movimiento_1.setVisibility(View.GONE);
                     movimiento_2.setVisibility(View.GONE);
                     visible.setVisibility(View.GONE);
@@ -300,7 +305,7 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
                 }
                 break;
             case R.id.imageVie:
-                if(movimiento_3.getVisibility() == View.VISIBLE){
+                if (movimiento_3.getVisibility() == View.VISIBLE) {
                     currentItemSaldoPuntos.setVisibility(View.VISIBLE);
                     currentItemLimiteCredito.setVisibility(View.VISIBLE);
                     currentItemCreditoUtilizado.setVisibility(View.VISIBLE);
@@ -323,7 +328,7 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
                 }
                 break;
             case R.id.imageVie12:
-                if(movimiento_4.getVisibility() == View.VISIBLE){
+                if (movimiento_4.getVisibility() == View.VISIBLE) {
                     currentItemSaldoPuntos.setVisibility(View.GONE);
                     currentItemLimiteCredito.setVisibility(View.GONE);
                     currentItemCreditoUtilizado.setVisibility(View.GONE);
