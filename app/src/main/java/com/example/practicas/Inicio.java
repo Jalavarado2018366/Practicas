@@ -30,8 +30,9 @@ import java.util.List;
 
 public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnItemChangedListener<TarjetasAdapter.ViewHolder>,
         View.OnClickListener {
-    private Button Abrir_Whatsapp, Abrir_Beneficiarios;
-    private ImageView Notification;
+    private View Abrir_Pagos;
+    private Button Abrir_Whatsapp, Abrir_Beneficiarios,Abrir_Medios_de_pago;
+    private ImageView Notification,Medios_de_pago,Abrir_Transferencias;
     private Button button2;
     private ImageView sucursales;
     private ImageView whatsapp, beneficiarios;
@@ -81,9 +82,13 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
 
         Abrir_Whatsapp = findViewById(R.id.button_w);
         Abrir_Beneficiarios = findViewById(R.id.btn_beneficiarios);
+        Abrir_Transferencias = findViewById(R.id.img_beneficiarios);
+        Abrir_Medios_de_pago = findViewById(R.id.btn_medios_de_pagos);
         Notification = findViewById((R.id.btNotification));
+        Abrir_Pagos = findViewById(R.id.view_Pago);
         whatsapp = findViewById(R.id.img_whatsapp);
         beneficiarios = findViewById(R.id.img_beneficiarios);
+        Medios_de_pago = findViewById(R.id.img_medios_de_pago);
         currentItemPrice = findViewById(R.id.item_price);
         currentItemfechaCorte = findViewById(R.id.txt_fechaCorte);
         currentItemfechaPago = findViewById(R.id.txt_fechaPago);
@@ -113,7 +118,7 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
         movimiento_2 = (TextView) findViewById(R.id.textView8);
         movimiento_3 = (TextView) findViewById(R.id.vermas);
         movimiento_4 = (TextView) findViewById(R.id.vermas12);
-        visible = (ImageView) findViewById(R.id.imageView6);
+            visible = findViewById(R.id.imageView6);
         ocultar = (ImageView) findViewById(R.id.imageView3);
         visible1 = (ImageView) findViewById(R.id.imageVie);
         ocultar1 = (ImageView) findViewById(R.id.imageVie12);
@@ -136,7 +141,27 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
                 .build());
 
         onItemChanged(data.get(0));
-
+        Abrir_Pagos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Inicio.this, Activity_Pago.class);
+                startActivity(intent);
+            }
+        });
+        Abrir_Transferencias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Inicio.this, Activity_Transferencias.class);
+                startActivity(intent);
+            }
+        });
+        Medios_de_pago.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Inicio.this, Activity_medios_de_pago.class);
+                startActivity(intent);
+            }
+        });
         Notification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -155,6 +180,13 @@ public class Inicio extends AppCompatActivity implements DiscreteScrollView.OnIt
             @Override
             public void onClick(View view) {
                 AbrirWhatsAppInicio( "44361724");
+            }
+        });
+        Abrir_Medios_de_pago.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Inicio.this, Activity_medios_de_pago.class);
+                startActivity(intent);
             }
         });
         Abrir_Beneficiarios.setOnClickListener(new View.OnClickListener() {

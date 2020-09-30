@@ -37,20 +37,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBar" />
 
-    <View
-        android:id="@+id/view5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+    <ImageView
+        android:id="@+id/view_service_inactivo"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/service_inactivo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
-    <View
-        android:id="@+id/view6"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+    <ImageView
+        android:id="@+id/view_service_activo"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/service_activo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,6 +59,48 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
+    <ImageView
+        android:id="@+id/view_credit_card_inactivo"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/credit_card_inactivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+    <ImageView
+        android:id="@+id/view_credit_card_activo"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/credit_card_activo"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
+    <ImageView
+        android:id="@+id/view_loan_inactivo"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/loan_inactivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+    <ImageView
+        android:id="@+id/view_loan_activo"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/loan_activo"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -714,7 +714,7 @@
                         </ScrollView>
 
                         <ImageView
-                            android:id="@+id/imageView8"
+                            android:id="@+id/img_transferencias"
                             android:layout_width="64dp"
                             android:layout_height="55dp"
                             android:layout_marginTop="12dp"
@@ -734,10 +734,10 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.05"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+                            app:layout_constraintTop_toBottomOf="@+id/img_transferencias" />
 
                         <ImageView
-                            android:id="@+id/imageView7"
+                            android:id="@+id/view_Pago"
                             android:layout_width="64dp"
                             android:layout_height="55dp"
                             android:layout_marginTop="12dp"
@@ -757,7 +757,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.886"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+                            app:layout_constraintTop_toBottomOf="@+id/view_Pago" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
