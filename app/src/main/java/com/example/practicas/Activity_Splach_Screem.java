@@ -18,7 +18,7 @@ public class Activity_Splach_Screem extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Activity_Splach_Screem.this, Inicio.class);
+                Intent intent = new Intent(Activity_Splach_Screem.this, Activity_Login.class);
                 startActivity(intent);
                 Activity_Splach_Screem.this.finish();
             }

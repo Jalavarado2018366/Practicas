@@ -713,6 +713,7 @@
 
                         </ScrollView>
 
+
                         <ImageView
                             android:id="@+id/img_transferencias"
                             android:layout_width="64dp"
